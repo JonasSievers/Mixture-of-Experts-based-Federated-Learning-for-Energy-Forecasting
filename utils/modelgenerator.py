@@ -1,3 +1,4 @@
+#Imports
 #Tensorflow
 import tensorflow as tf
 from tensorflow import keras
@@ -9,33 +10,36 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neighbors import KNeighborsRegressor
 
-
+#The ModelGenerator class contains methods to build different models
+#Tensorflow models: softgated_moe_model, top1_moe_model, topk_moe_model, lstm_model, bilstm_model, cnn, dense, probability_model, transformer
+#SKlearn models: Svm, Elasticnet_regression, Decisiontree, Randomforrest, K_neighbors regression
 class ModelGenerator():
- 
-  def create_feedforward_network(self, ff_dim, embed_dim):
+  
+  #Builds the expert models for the MoE Layer
+  def build_expert_network(self, ff_dim, embed_dim):
       expert = keras.Sequential([
               layers.Dense(ff_dim, activation="relu"), 
               layers.Dense(embed_dim)
               ])
       return expert
 
+  #Builds a MoE model with soft gating
   def build_softgated_moe_model(self, X_train, batch_size, horizon, dense_1_units, num_experts, expert_hidden_units, expert_output_units, dense_2_units, m1):
-
-    #INPUT PART
+    #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
-    x = layers.Dense(dense_1_units, activation="relu", name='dense_layer_1')(inputs)  #shape=(None, 48, 32)
+    x = layers.Dense(dense_1_units, activation="relu", name='dense_layer_1')(inputs)
 
+    #EMBEDDED MOE LAYER
     # Gating network (Routing Softmax)
     routing_logits = layers.Dense(num_experts, activation='softmax')(x)
-
-    #EXPERTS
-    experts = [m1.create_feedforward_network(ff_dim=expert_hidden_units, embed_dim=expert_output_units)(x) for _ in range(num_experts)]
+    #experts
+    experts = [m1.build_expert_network(ff_dim=expert_hidden_units, embed_dim=expert_output_units)(x) for _ in range(num_experts)]
     expert_outputs = tf.stack(experts, axis=1)
-
+    #Add and Multiply expert models with router probability
     moe_output = tf.einsum('bsn,bnse->bse', routing_logits, expert_outputs)
+    #END MOE LAYER
 
-    #BOTTOM Model
-    x = layers.Dense(dense_2_units, name='dense_layer_2')(moe_output) #(16, 48, 16)
+    x = layers.Dense(dense_2_units, name='dense_layer_2')(moe_output)
     x = layers.Flatten(name='flat_layer')(x)
     #x = layers.Dense(dense_3_units, name='dense_layer_3')(x)
     outputs = layers.Dense(horizon, name='output_layer')(x)
@@ -43,79 +47,76 @@ class ModelGenerator():
 
     return softgated_moe_model
 
+  #Builds a MoE model with top_1 gating and expert balancing
   def build_top1_moe_model(self, X_train, batch_size, horizon, sequenze_length, num_experts, expert_capacity, expert_dim, dense_1_units, dense_2_units, dense_3_units, m1):
-
-    #INPUT PART
+    #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
-    x = layers.Dense(dense_1_units, activation="relu", name='dense_layer_1')(inputs)  #shape=(None, 48, 32)
+    x = layers.Dense(dense_1_units, activation="relu", name='dense_layer_1')(inputs)
 
-
+    #EMBEDDED MOE LAYER
     #ROUTER
-    router_inputs = tf.reshape(x, [batch_size*sequenze_length, dense_1_units], name="reshape_1") # (96, 32)
-    router = layers.Dense(num_experts, activation="softmax", name='router_layer')(router_inputs) #(96, 16) -> 16: num_experts
-    expert_gate, expert_index = tf.math.top_k(router, k=1) # (96, 2) vs. earlier (48, 1) 
-    expert_mask = tf.one_hot(expert_index, depth=num_experts) # (96, 2, 16)
-    position_in_expert = tf.cast(tf.math.cumsum(expert_mask, axis=0) * expert_mask, tf.dtypes.int32) #(96, 2, 16)
-    expert_mask *= tf.cast(tf.math.less(tf.cast(position_in_expert, tf.dtypes.int32), expert_capacity),tf.dtypes.float32,) # (96, 2, 16)
-    expert_mask_flat = tf.reduce_sum(expert_mask, axis=-1) #(96, 2) vs. earlier (96,1)
-    expert_gate *= expert_mask_flat # (96, 2)
+    router_inputs = tf.reshape(x, [batch_size*sequenze_length, dense_1_units], name="reshape_1")
+    router = layers.Dense(num_experts, activation="softmax", name='router_layer')(router_inputs)
+    expert_gate, expert_index = tf.math.top_k(router, k=1)
+    expert_mask = tf.one_hot(expert_index, depth=num_experts) 
+    position_in_expert = tf.cast(tf.math.cumsum(expert_mask, axis=0) * expert_mask, tf.dtypes.int32) 
+    expert_mask *= tf.cast(tf.math.less(tf.cast(position_in_expert, tf.dtypes.int32), expert_capacity),tf.dtypes.float32,)
+    expert_mask_flat = tf.reduce_sum(expert_mask, axis=-1) 
+    expert_gate *= expert_mask_flat 
     combined_tensor = tf.expand_dims(
-                expert_gate #(96, 2)
-                * expert_mask_flat #(96, 2)
+                expert_gate 
+                * expert_mask_flat 
                 * tf.squeeze(tf.one_hot(expert_index, depth=num_experts), 1),
-                -1,) * tf.squeeze(tf.one_hot(position_in_expert, depth=expert_capacity), 1) #shape=(48, 10, 4)
-
-    dispatch_tensor = tf.cast(combined_tensor, tf.dtypes.float32) #shape=(48, 10, 4)
-
+                -1,) * tf.squeeze(tf.one_hot(position_in_expert, depth=expert_capacity), 1) 
+    dispatch_tensor = tf.cast(combined_tensor, tf.dtypes.float32) 
     #EXPERTS
-    experts = [m1.create_feedforward_network(ff_dim=expert_dim, embed_dim=dense_1_units) for _ in range(num_experts)]
-    expert_inputs = tf.einsum("ab,acd->cdb", router_inputs, dispatch_tensor) # (1440, 32) and (1440, 10, 144) -> (10,4,32)
-    #Unnecassary
-    expert_inputs = tf.reshape(expert_inputs, [num_experts, expert_capacity, dense_1_units], name="reshape_2") #shape=(10, 4, 32)
-    expert_input_list = tf.unstack(expert_inputs, axis=0) #[(4, 32) ...x10 ...] 
+    experts = [m1.build_expert_network(ff_dim=expert_dim, embed_dim=dense_1_units) for _ in range(num_experts)]
+    expert_inputs = tf.einsum("ab,acd->cdb", router_inputs, dispatch_tensor) 
+    expert_inputs = tf.reshape(expert_inputs, [num_experts, expert_capacity, dense_1_units], name="reshape_2")
+    expert_input_list = tf.unstack(expert_inputs, axis=0) 
     expert_output_list = [
         experts[idx](expert_input)
-        for idx, expert_input in enumerate(expert_input_list) #[(4, 32) ...x10 ...] 
+        for idx, expert_input in enumerate(expert_input_list) 
     ]
-    expert_outputs = tf.stack(expert_output_list, axis=1) #shape=(4, 10, 32)
+    expert_outputs = tf.stack(expert_output_list, axis=1) 
+    #Add and Multiply expert models with router probability
     expert_outputs_combined = tf.einsum(
-        "abc,xba->xc", expert_outputs, combined_tensor      #Ziel: (1000, 10, 32) and (10 000, 10, 1000) -> (10 000, 32)
-    )                                                       #We:   (4, 10, 32)    and (48, 10, 4) -> (48, 32)
-    outputs = tf.reshape(expert_outputs_combined, [batch_size, sequenze_length, dense_1_units], name="reshape_3") #shape=(1, 48, 32)
-    moe_output= layers.Dropout(0.1)(outputs, training=True) #(1, 48, 32)
-
+        "abc,xba->xc", expert_outputs, combined_tensor      
+    )
+    outputs = tf.reshape(expert_outputs_combined, [batch_size, sequenze_length, dense_1_units], name="reshape_3")
+    moe_output= layers.Dropout(0.1)(outputs, training=True)
+    #END MOE LAYER
 
     #BOTTOM Model
     x = layers.Dense(dense_2_units, name='dense_layer_2')(moe_output) #(16, 48, 16)
-    print("We are here with shape: ", x.shape)
     x = layers.Flatten(name='flat_layer')(x)
-    print("Flat: ", x.shape)
     #x = layers.Dense(dense_3_units, name='dense_layer_3')(x)
     outputs = layers.Dense(horizon, name='output_layer')(x)
-    print("outputs: ", outputs.shape)
     moe_model = models.Model(inputs=inputs, outputs=outputs)
 
     return moe_model
 
+  #Builds a MoE model with top_k gating
   def build_topk_moe_model(self, X_train, batch_size, horizon, dense_1_units, num_experts, top_k, expert_hidden_units, expert_output_units, dense_2_units, m1):
-    #INPUT PART
+    #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
-    x = layers.Dense(dense_1_units, activation="relu", name='dense_layer_1')(inputs)  #shape=(None, 48, 32)
+    x = layers.Dense(dense_1_units, activation="relu", name='dense_layer_1')(inputs)
 
-    # Gating network (Routing Softmax)
+    #EMBEDDED MOE LAYER
+    # ROUTER
     router_probs = layers.Dense(num_experts, activation='softmax')(x)
     expert_gate, expert_index = tf.math.top_k(router_probs, k=top_k)
     expert_idx_mask = tf.one_hot(expert_index, depth=num_experts)
     combined_tensor = tf.einsum('abc,abcd->abd', expert_gate, expert_idx_mask)
-
     #EXPERTS
-    experts = [m1.create_feedforward_network(ff_dim=expert_hidden_units, embed_dim=expert_output_units)(x) for _ in range(num_experts)]
+    experts = [m1.build_expert_network(ff_dim=expert_hidden_units, embed_dim=expert_output_units)(x) for _ in range(num_experts)]
     expert_outputs = tf.stack(experts, axis=1)
-
+    #Add and Multiply expert models with router probability
     moe_output = tf.einsum('bsn,bnse->bse', combined_tensor, expert_outputs)
+    #END MOE LAYER
 
     #BOTTOM Model
-    x = layers.Dense(dense_2_units, name='dense_layer_2')(moe_output) #(16, 48, 16)
+    x = layers.Dense(dense_2_units, name='dense_layer_2')(moe_output) 
     x = layers.Flatten(name='flat_layer')(x)
     #x = layers.Dense(dense_3_units, name='dense_layer_3')(x)
     outputs = layers.Dense(horizon, name='output_layer')(x)
@@ -123,6 +124,7 @@ class ModelGenerator():
 
     return topk_moe_model
   
+  #Builds 
   def build_lstm_model(self, X_train, horizon, lstm_cells):
     #model = tf.keras.Sequential([
     #tf.keras.layers.LSTM(lstm_cells, input_shape=(X_train.shape[1], X_train.shape[2])), 

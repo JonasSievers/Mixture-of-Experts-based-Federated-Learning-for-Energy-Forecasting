@@ -13,7 +13,7 @@ This repsoitory consists of the following parts:
 - **images** folder: Here are all figures and plots stored and the script to create them
 - **models** folder: Here the model weights are stored
 - **src** folder: Here the main scripts are stored for the forecasting baseline, local learning, federated learning and evaluation
-- **utils** folder: Here helper classes for data handling, model generation, and model handling are stored
+  - **utils** folder: Here helper classes for data handling, model generation, and model handling are stored
 
 
 ### Install and Run the project 

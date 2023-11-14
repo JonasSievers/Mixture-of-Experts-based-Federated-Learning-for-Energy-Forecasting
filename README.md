@@ -8,7 +8,7 @@
 
 ### Project structure
 This repsoitory consists of the following parts: 
-- **data** folder: Here all datasets and scripts are stored to collect the datasets, preprocess them, and create the final dataset used for the forecasting task. 
+- **data** folder: Here are all datasets and scripts to collect the datasets, preprocess them, performe feature engineering and create the final dataset used for the forecasting task. 
 
 
 ### Install and Run the project 

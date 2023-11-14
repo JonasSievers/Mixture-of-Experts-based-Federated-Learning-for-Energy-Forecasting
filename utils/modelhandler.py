@@ -1,9 +1,12 @@
 #Imports
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 import time
 import pandas as pd
+import numpy as np
+
+from keras.callbacks import ModelCheckpoint
 
 #The Modelhandler class contains usefull methods to compile, fit, evaluate, and plot models
 class Modelhandler():
@@ -32,43 +35,50 @@ class Modelhandler():
         plt.show()
 
     #This method compiles the model using Adam optimizer, fits the model, and evaluates it
-    def compile_fit_evaluate_model(self, model, loss, metrics, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks):
+    def compile_fit_evaluate_model(self, model, loss, metrics, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks, user= "", hyper="", optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)):
         #Compile the model
-        model.compile(loss=loss, optimizer=tf.keras.optimizers.Adam(learning_rate=0.01), metrics=metrics)
+        model.compile(loss=loss, optimizer=optimizer, metrics=metrics)
+
         # Train the model
-        history = model.fit(X_train, y_train, epochs=max_epochs, batch_size=batch_size, validation_data=(X_val, y_val), callbacks=callbacks, verbose=1,)
+        history = model.fit(X_train, y_train, epochs=max_epochs, batch_size=batch_size, validation_data=(X_val, y_val), callbacks=callbacks, verbose=0,)
+        #model = tf.keras.models.load_model('models/best_model.h5')
         #Evaluate the model on test dataset
-        test_loss = model.evaluate(X_test, y_test, batch_size=batch_size, verbose=1)
-        print("Loss: ", test_loss)
+        test_loss = model.evaluate(X_test, y_test, batch_size=batch_size, verbose=0)
+
+        train_times = callbacks[1].get_training_times_df()
+        total_train_time = train_times["Total Training Time"][0]
+        avg_time_epoch = train_times["Epoch Avg Train_time"].iloc[-1]
     
-        df_results = callbacks[1].get_training_times_df()
-        df_results.set_index('Epoch', inplace=True)
-        df_results['train_mse'] = history.history['loss']
-        df_results['train_rmse'] = history.history['root_mean_squared_error']
-        df_results['train_mape'] = history.history['mean_absolute_percentage_error']
-        df_results['train_mae'] = history.history['mean_absolute_error']
-        df_results['val_mse'] = history.history['val_loss']
-        df_results['val_rmse'] = history.history['val_root_mean_squared_error']
-        df_results['val_mape'] = history.history['val_mean_absolute_percentage_error']
-        df_results['val_mae'] = history.history['val_mean_absolute_error']
-        df_results['test_mse'] = test_loss[0]
-        df_results['test_rmse'] = test_loss[1]
-        df_results['test_mape'] = test_loss[2]
-        df_results['test_mae'] = test_loss[3]
+        model_user_result = pd.DataFrame(
+            data=[[user, hyper, total_train_time, avg_time_epoch, test_loss[0], test_loss[1], test_loss[2], test_loss[3]]], 
+            columns=["user", "architecture", "train_time", "avg_time_epoch", "mse", "rmse", "mape", "mae"]
+        )
 
+        return history, model_user_result
+    
+
+    
+    def evaluate_ensemble(self, y_test, final_predictions, user, hyper, train_time, avg_time_epoch): 
         
-        summary_row = {
-            'avg_num_eppochs': df_results.index[-1], 
-            'avg_train_time_epoch': df_results['Epoch Train_time'].mean(), 
-            'avg_total_train_time': df_results['Total Training Time'].mean(), 
-            'avg_test_rmse': df_results['test_rmse'].min(), 
-            'avg_test_mae': df_results['test_mae'].min()
-        }
-        df_summary = pd.DataFrame(columns=['avg_num_eppochs', 'avg_train_time_epoch', 'avg_total_train_time', 'avg_test_rmse', 'avg_test_mae'])
-        df_summary.loc[len(df_summary)] = summary_row
-        df_summary
+        # Calculate Mean Squared Error (MSE)
+        mse = mean_squared_error(y_test, final_predictions)
+        
+        # Calculate Root Mean Squared Error (RMSE)
+        rmse = np.sqrt(mse)          
 
-        return history, df_results, df_summary
+        # Calculate Mean Absolute Percentage Error (MAPE)
+        epsilon = 1e-10  # Small epsilon to avoid division by zero
+        mape = np.mean(np.abs((y_test - final_predictions) / (y_test + epsilon))) * 100
+
+        # Calculate Mean Absolute Error (MAE)
+        mae = mean_absolute_error(y_test, final_predictions)
+
+        model_user_result = pd.DataFrame(
+            data=[[user, hyper, train_time, avg_time_epoch, mse, rmse, mape, mae]], 
+            columns=["user", "architecture", "train_time", "avg_time_epoch", "mse", "rmse", "mape", "mae"]
+        )
+
+        return model_user_result
 
     #This methods fits, predicts, and plots the results for sklearn models
     def statistical_model_compile_fit_evaluate(self, X_train, y_train, X_test, y_test, model):

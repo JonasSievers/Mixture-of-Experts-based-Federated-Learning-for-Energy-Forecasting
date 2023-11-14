@@ -1,53 +1,14 @@
-# MoE-based-FL-for-secure-STLF
+# Mixture-of-Experts based Federated Learning for secure short-term load forecasting
 
+![image description](images/Figure1.svg)
 
-### To Dos
-* `Github`: Improve the readme
-* `Struktur`: Github
-* `Firest small`: Prediction
-
-<br />
-
-### Commands
-Environment [Tutorial](https://medium.com/@dipan.saha/managing-git-repositories-with-vscode-setting-up-a-virtual-environment-62980b9e8106 )
-
-Create Environment
-```bash
-.venv\Scripts\activate.ps1 
-```
-Deaktivate Environment
-```bash
-deactivate
-```
-Requirements
-```bash
-pip freeze > requirements.txt
-```
-
-<br />
-
-
-  <center>
-    <img src="images/github_titel_image.png" alt="Concept"  height=200>
-  </center>
-
-<br />
-
-> **Abstract**: Electricity load forecasting is an essential task within smart grids to assist demand and supply balance. While advanced deep learning models require large amounts of high-resolution data for accurate short-term load predictions, fine-grained load profiles can expose users' electricity consumption behaviors, which raises privacy and security concerns. One solution to improve data privacy is federated learning, where models are trained locally on private data, and only the trained model parameters are merged and updated on a global server. However, the heterogeneous load data requires prediction models that allow for high capacity and variance in predictions. Mixture of Experts models are a promisiong solution to solve this problem, as they combine multiple specialzed expert models based on a gating mechanism to increase model capacity. Therefore, this paper presents a novel Mixture of Experts based deep learning approach with federated learning for short-term electricity load prediction. To evaluate our results, we benchmark our federated learning architecture against central and local learning and compare the performance of our model to long short-term memory models and convolutional neural networks. Our simulations are based on a dataset from a German university campus and show that Mixture of Expert based forecasting is a promising alternative to state-of-the-art models within federated learning. <br />
-[FULL PAPER](https://www.iccep.net/upload/SSEMSG171.pdf)
-
-<br />
-
-### Table of Contents
-- Install and Run the project
-- How to use the project
+> **Abstract:**
+> *Accurate load forecasting is essential for the reliable planning and operation of smart grids, to improve energy storage optimization, or to enable demand response programs. As load forecasting often involves heterogeneous and complex data patterns with high variability, precise predictions are still challenging. Here, models with enhanced adaptability and generalizability are crucial, making Mixture-of-Experts (MoE) a promising solution. An MoE layer combines the predictions of multiple specialized sub-models, known as experts, using a gating mechanism to dynamically select and weight the experts' outputs based on the input sequence. Existing deep learning models can integrate this generic layer into their architecture to learn and handle complex patterns in data adaptively. In this paper, we adopt the MoE concept to dense and bidirectional long short-term memory models for load forecasting, using soft- and top-k gating. As our benchmark, we consider stateof-the-art bidirectional long short-term memory models, convolutional neural networks, residual neural networks, and transformer models. Further, we implement both local and federated learning architectures. In federated learning, models are trained locally on private data, and only the trained model parameters are merged and updated on a global server to improve accuracy and data privacy. Utilizing the Ausgrid dataset, we demonstrate that including an MoE layer into existing model architectures can increase accuracy by up to 13 % while decreasing the total training time by 33 %. Additionally, implementing the MoE model within an FL architecture can improve model accuracy by a further 4% compared to local learning.*
 
 <br />
 
 ### Install and Run the project 
-Clone the github repository and install the requirements file. 
 
-<br />
 
 ### How to use the project 
 This prouject provides: 

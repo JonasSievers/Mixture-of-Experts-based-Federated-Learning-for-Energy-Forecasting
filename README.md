@@ -17,3 +17,7 @@ This repsoitory consists of the following parts:
 
 
 ### Install and Run the project 
+To run the project you can fork this repository and install all dependencies by running
+```
+pip install -r requirements.txt
+```

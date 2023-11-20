@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\rs1044\bwSyncShare\02Python Code\MoE-based-FL-for-secure-STLF\.venv
+set VIRTUAL_ENV=C:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 

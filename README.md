@@ -17,7 +17,16 @@ This repsoitory consists of the following parts:
 
 
 ### Install and Run the project 
-To run the project you can fork this repository and install all dependencies by running
+To run the project you can fork this repository and following the instructions: 
+First create your own virtual environment: 
+```
+python -m venv .venv
+```
+Activate your environment with
+```
+ .\.venv\Scripts\activate.ps1
+```
+Install all dependencies with
 ```
 pip install -r requirements.txt
 ```

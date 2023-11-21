@@ -1,0 +1,796 @@
+2023-11-21 16:57:19,877 INFO    StreamThr :12196 [internal.py:wandb_internal():86] W&B internal server running at pid: 12196, started at: 2023-11-21 16:57:19.876154
+2023-11-21 16:57:19,878 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status
+2023-11-21 16:57:19,881 INFO    WriterThread:12196 [datastore.py:open_for_write():85] open: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\run-vvuxcc82.wandb
+2023-11-21 16:57:19,882 DEBUG   SenderThread:12196 [sender.py:send():380] send: header
+2023-11-21 16:57:19,943 DEBUG   SenderThread:12196 [sender.py:send():380] send: run
+2023-11-21 16:57:20,524 INFO    SenderThread:12196 [dir_watcher.py:__init__():211] watching files in: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files
+2023-11-21 16:57:20,524 INFO    SenderThread:12196 [sender.py:_start_run_threads():1124] run started: vvuxcc82 with start time 1700582239.877153
+2023-11-21 16:57:20,637 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: check_version
+2023-11-21 16:57:20,638 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: check_version
+2023-11-21 16:57:20,986 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: run_start
+2023-11-21 16:57:21,029 DEBUG   HandlerThread:12196 [system_info.py:__init__():32] System info init
+2023-11-21 16:57:21,029 DEBUG   HandlerThread:12196 [system_info.py:__init__():47] System info init done
+2023-11-21 16:57:21,029 INFO    HandlerThread:12196 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 16:57:21,029 INFO    SystemMonitor:12196 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 16:57:21,029 INFO    HandlerThread:12196 [system_monitor.py:probe():214] Collecting system info
+2023-11-21 16:57:21,036 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 16:57:21,036 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 16:57:21,037 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 16:57:21,044 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 16:57:21,051 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started network monitoring
+2023-11-21 16:57:21,054 DEBUG   HandlerThread:12196 [system_info.py:probe():196] Probing system
+2023-11-21 16:57:21,056 DEBUG   HandlerThread:12196 [system_info.py:_probe_git():181] Probing git
+2023-11-21 16:57:21,060 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:21,060 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:21,203 DEBUG   HandlerThread:12196 [system_info.py:_probe_git():189] Probing git done
+2023-11-21 16:57:21,203 DEBUG   HandlerThread:12196 [system_info.py:probe():244] Probing system done
+2023-11-21 16:57:21,203 DEBUG   HandlerThread:12196 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.6', 'heartbeatAt': '2023-11-21T15:57:21.054112', 'startedAt': '2023-11-21T15:57:19.869077', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/JonasSievers/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting.git', 'commit': 'b33f21d92d5864955c1f9d91a57234fd84c624c0'}, 'email': None, 'root': 'C:/Users/rs1044/Documents/GitHub/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting', 'host': 'IPEBLANK-PC4', 'username': 'rs1044', 'executable': 'c:\\Users\\rs1044\\Documents\\GitHub\\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\\.venv\\Scripts\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3701.0, 'min': 0.0, 'max': 3701.0}, 'cpu_freq_per_core': [{'current': 3701.0, 'min': 0.0, 'max': 3701.0}], 'disk': {'/': {'total': 462.7943344116211, 'used': 330.5667152404785}}, 'gpu': 'NVIDIA GeForce GT 1030', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GT 1030', 'memory_total': 2147483648}], 'memory': {'total': 63.91092300415039}}
+2023-11-21 16:57:21,203 INFO    HandlerThread:12196 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-21 16:57:21,203 INFO    HandlerThread:12196 [system_monitor.py:probe():227] Publishing system info
+2023-11-21 16:57:21,203 DEBUG   HandlerThread:12196 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-21 16:57:21,204 DEBUG   HandlerThread:12196 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-21 16:57:21,205 INFO    HandlerThread:12196 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-21 16:57:21,213 DEBUG   SenderThread:12196 [sender.py:send():380] send: files
+2023-11-21 16:57:21,213 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-21 16:57:21,214 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 16:57:21,215 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 16:57:21,216 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 16:57:21,465 DEBUG   SenderThread:12196 [sender.py:send():380] send: telemetry
+2023-11-21 16:57:21,465 DEBUG   SenderThread:12196 [sender.py:send():380] send: config
+2023-11-21 16:57:21,483 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:21,484 DEBUG   SenderThread:12196 [sender.py:send():380] send: telemetry
+2023-11-21 16:57:21,484 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:21,484 DEBUG   SenderThread:12196 [sender.py:send():380] send: telemetry
+2023-11-21 16:57:21,484 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:21,484 WARNING SenderThread:12196 [sender.py:send_metric():1331] Seen metric with glob (shouldn't happen)
+2023-11-21 16:57:21,484 DEBUG   SenderThread:12196 [sender.py:send():380] send: telemetry
+2023-11-21 16:57:21,484 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:21,485 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:21,485 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:21,537 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:21,538 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-metadata.json
+2023-11-21 16:57:21,538 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\requirements.txt
+2023-11-21 16:57:21,538 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:22,223 INFO    wandb-upload_0:12196 [upload_job.py:push():131] Uploaded file C:\Users\rs1044\AppData\Local\Temp\tmpqcona2g6wandb\c9yps8xu-wandb-metadata.json
+2023-11-21 16:57:22,644 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:22,645 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,645 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,645 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,645 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,646 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,646 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,646 DEBUG   SenderThread:12196 [sender.py:send():380] send: metric
+2023-11-21 16:57:22,646 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:22,646 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:22,647 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:23,073 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:23,073 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:23,555 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:23,555 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:23,583 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:23,583 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:23,978 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:24,749 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:25,090 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:25,090 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:25,130 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:25,375 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpj62jnu1j
+2023-11-21 16:57:25,375 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8xmcrsad
+2023-11-21 16:57:25,422 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp0f2ln_2l
+2023-11-21 16:57:25,422 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpr_27istc
+2023-11-21 16:57:25,577 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:25,584 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3klbs19q
+2023-11-21 16:57:25,906 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:26,307 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:27,081 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:27,108 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:27,108 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:27,395 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI4Nzgy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': None}}
+2023-11-21 16:57:27,395 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:27,395 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:57:27,395 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:27,397 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:27,397 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:27,474 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:27,602 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:28,298 INFO    wandb-upload_1:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmptjnx79sm
+2023-11-21 16:57:28,461 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:28,858 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:28,874 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmppua9vbhx
+2023-11-21 16:57:28,898 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpxdkkj8bx
+2023-11-21 16:57:28,914 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpoamj5_fv
+2023-11-21 16:57:29,052 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpkvxdi80x
+2023-11-21 16:57:29,127 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:29,127 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:29,616 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:29,671 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:29,903 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI4ODIw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI4Nzgy', 'versionIndex': 0}}}
+2023-11-21 16:57:29,903 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:29,903 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:29,904 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:29,904 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:30,070 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:30,618 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:30,757 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpyx7oranv
+2023-11-21 16:57:30,846 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:31,144 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:31,144 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:31,245 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:31,362 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpxs2x3a05
+2023-11-21 16:57:31,401 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp9sya2zi5
+2023-11-21 16:57:31,550 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjau47q0m
+2023-11-21 16:57:31,625 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:31,627 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8ug7fhjy
+2023-11-21 16:57:32,044 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:32,391 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI4ODYw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI4ODIw', 'versionIndex': 1}}}
+2023-11-21 16:57:32,391 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:32,391 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:32,392 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:32,392 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:32,435 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:32,632 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:33,158 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:33,158 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:33,230 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:33,454 INFO    wandb-upload_1:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp_fs6ppef
+2023-11-21 16:57:33,620 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:33,634 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:34,013 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpqwp1tov0
+2023-11-21 16:57:34,021 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3o4yw0rf
+2023-11-21 16:57:34,066 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpgurzhoay
+2023-11-21 16:57:34,216 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp302zqcz1
+2023-11-21 16:57:34,421 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:34,818 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:35,020 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI4ODgz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI4ODYw', 'versionIndex': 2}}}
+2023-11-21 16:57:35,020 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:35,020 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:35,020 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:57:35,021 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:35,021 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:35,177 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:35,178 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:35,607 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:35,656 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:35,840 INFO    wandb-upload_0:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpf42irj6y
+2023-11-21 16:57:35,993 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:36,227 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 16:57:36,228 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 16:57:36,432 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3dw4c0do
+2023-11-21 16:57:36,439 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1ry1ycx2
+2023-11-21 16:57:36,451 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpo7ecqill
+2023-11-21 16:57:36,787 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:36,802 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp0cn_e9n6
+2023-11-21 16:57:37,168 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:37,196 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:37,196 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:37,665 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:37,666 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI4OTE5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI4ODgz', 'versionIndex': 3}}}
+2023-11-21 16:57:37,666 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:37,666 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:37,667 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:37,667 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:37,938 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:38,314 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:38,491 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3t78vu08
+2023-11-21 16:57:38,670 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:39,063 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmphcnekubl
+2023-11-21 16:57:39,069 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp2_1lvw9k
+2023-11-21 16:57:39,088 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjinbjsrb
+2023-11-21 16:57:39,211 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:39,211 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:39,337 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:39,673 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:39,728 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:40,531 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:40,918 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:41,225 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:41,225 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:41,251 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpguiylaz9
+2023-11-21 16:57:41,254 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:57:41,707 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:42,077 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI4OTQ5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI4OTE5', 'versionIndex': 4}}}
+2023-11-21 16:57:42,077 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:42,077 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:57:42,078 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:42,079 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:42,079 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:42,112 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:42,686 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:42,906 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:43,168 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp17u3mb09
+2023-11-21 16:57:43,242 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:43,242 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:43,296 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:43,687 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:43,759 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpxcaigtms
+2023-11-21 16:57:43,773 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpd1llo2mz
+2023-11-21 16:57:43,802 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8c92lmrv
+2023-11-21 16:57:43,961 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpa0gjeej8
+2023-11-21 16:57:44,091 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:44,504 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:44,836 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MDE3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI4OTQ5', 'versionIndex': 5}}}
+2023-11-21 16:57:44,836 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:44,836 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:44,837 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:44,837 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:45,266 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:45,267 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:45,297 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:45,682 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:45,701 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:45,702 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:45,742 INFO    wandb-upload_1:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpiux8dveo
+2023-11-21 16:57:46,273 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:57:46,354 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1a8goskh
+2023-11-21 16:57:46,364 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpt_nkw6s6
+2023-11-21 16:57:46,394 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpyyov41as
+2023-11-21 16:57:46,490 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:46,540 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpshcm9shp
+2023-11-21 16:57:46,887 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:47,289 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:47,289 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:47,397 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MDU0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MDE3', 'versionIndex': 6}}}
+2023-11-21 16:57:47,397 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:47,398 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:47,398 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:57:47,398 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:47,399 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:47,673 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:47,710 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:47,710 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:48,072 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:48,352 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8khqvop1
+2023-11-21 16:57:48,945 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3qxh32i0
+2023-11-21 16:57:48,951 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:48,985 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpzgt4ys6_
+2023-11-21 16:57:49,028 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp192sogcr
+2023-11-21 16:57:49,124 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmptfh2i4cu
+2023-11-21 16:57:49,305 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:49,305 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:49,339 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:49,732 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:49,993 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MDg2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MDU0', 'versionIndex': 7}}}
+2023-11-21 16:57:49,993 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:49,994 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:49,995 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:49,995 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:50,329 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:50,730 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:50,733 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:50,861 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpeg0kd7ti
+2023-11-21 16:57:51,241 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 16:57:51,362 ERROR   gpu       :12196 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 16:57:51,364 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:51,364 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:51,454 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1gv43er7
+2023-11-21 16:57:51,454 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpuhlrxcv8
+2023-11-21 16:57:51,509 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpe1h_erso
+2023-11-21 16:57:51,562 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:51,662 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmph65_21r8
+2023-11-21 16:57:51,734 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:51,955 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:52,486 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MTE1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MDg2', 'versionIndex': 8}}}
+2023-11-21 16:57:52,488 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:57:52,648 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:52,649 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:52,649 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:52,650 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:52,734 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:52,738 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\config.yaml
+2023-11-21 16:57:52,738 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:53,142 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:53,371 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:53,371 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:53,454 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmppr8lbgpx
+2023-11-21 16:57:53,742 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:54,035 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:54,075 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3mxfl6h0
+2023-11-21 16:57:54,075 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpz5dk4jr4
+2023-11-21 16:57:54,100 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpqn7wyix3
+2023-11-21 16:57:54,239 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpeqhh6pu9
+2023-11-21 16:57:54,441 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:55,063 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MTQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MTE1', 'versionIndex': 9}}}
+2023-11-21 16:57:55,063 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:55,063 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:55,064 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:55,064 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 16:57:55,242 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:55,254 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:55,388 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:55,388 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:55,634 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:55,754 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:56,156 INFO    wandb-upload_1:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpezyf4e8d
+2023-11-21 16:57:56,361 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:57:56,491 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:56,734 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmppznnopzx
+2023-11-21 16:57:56,747 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjzcs7ka9
+2023-11-21 16:57:56,761 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpwm_2a6ph
+2023-11-21 16:57:56,885 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:56,905 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpnoy8nyba
+2023-11-21 16:57:57,402 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:57,402 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:57,660 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:57,728 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MTgx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MTQ0', 'versionIndex': 10}}}
+2023-11-21 16:57:57,728 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:57:57,728 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:57:57,728 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:57:57,729 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:57:57,729 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:57:57,773 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:57:57,773 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:57:58,064 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:58,553 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpj0qhqnkf
+2023-11-21 16:57:58,935 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:57:59,142 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpj1smbpyd
+2023-11-21 16:57:59,172 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpdy2cc820
+2023-11-21 16:57:59,200 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpcte18og_
+2023-11-21 16:57:59,344 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:57:59,362 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp6_yaejx0
+2023-11-21 16:57:59,418 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:59,418 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:57:59,779 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:00,217 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MjE0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MTgx', 'versionIndex': 11}}}
+2023-11-21 16:58:00,217 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:00,217 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:00,218 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:00,218 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:00,367 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:00,787 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:00,811 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:01,145 INFO    wandb-upload_1:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmppaaz_wq_
+2023-11-21 16:58:01,414 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:01,422 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:01,422 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:01,791 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:01,817 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:01,828 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpy8bp9wr4
+2023-11-21 16:58:01,886 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp6xc6mz63
+2023-11-21 16:58:01,910 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmplm9g316c
+2023-11-21 16:58:02,018 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpk0c03u_k
+2023-11-21 16:58:02,231 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:02,846 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MjQ5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MjE0', 'versionIndex': 12}}}
+2023-11-21 16:58:02,846 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:02,846 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:02,846 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:02,847 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:02,847 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:03,027 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:03,422 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:03,433 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:03,433 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:03,694 INFO    wandb-upload_0:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpm0mm2_a0
+2023-11-21 16:58:03,811 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:03,811 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:04,302 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:04,312 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpdgipxjew
+2023-11-21 16:58:04,320 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpbebrkfov
+2023-11-21 16:58:04,328 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpd_p0wpc_
+2023-11-21 16:58:04,513 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpzaf73o0q
+2023-11-21 16:58:04,721 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:05,415 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Mjgz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MjQ5', 'versionIndex': 13}}}
+2023-11-21 16:58:05,415 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:05,415 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:05,416 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:05,416 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:05,449 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:05,449 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:05,520 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:05,827 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:05,827 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:05,922 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:06,224 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpvp7umc71
+2023-11-21 16:58:06,250 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 16:58:06,795 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:06,820 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp53mpz2p3
+2023-11-21 16:58:06,843 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpfisxsye8
+2023-11-21 16:58:06,862 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpx8bpqytx
+2023-11-21 16:58:07,024 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpme0png_j
+2023-11-21 16:58:07,198 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:07,464 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:07,464 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:07,834 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:07,848 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MzQx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Mjgz', 'versionIndex': 14}}}
+2023-11-21 16:58:07,848 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:07,849 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:07,849 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:07,850 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:07,850 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:08,015 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:08,414 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:08,610 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpokcwgg0e
+2023-11-21 16:58:08,840 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:09,206 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp905elqj7
+2023-11-21 16:58:09,206 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpudd_xbzz
+2023-11-21 16:58:09,216 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp6ooez_v0
+2023-11-21 16:58:09,253 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:09,365 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpkul8s9y6
+2023-11-21 16:58:09,475 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:09,476 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:09,645 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:09,844 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:10,436 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:10,826 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:11,489 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:11,489 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:11,493 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:11,631 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Mzgy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5MzQx', 'versionIndex': 15}}}
+2023-11-21 16:58:11,632 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:11,632 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:11,633 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:11,633 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:11,834 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:11,868 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:12,227 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-21 16:58:12,505 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpcttafibc
+2023-11-21 16:58:13,101 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: log_artifact
+2023-11-21 16:58:13,111 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpe1ve2ujc
+2023-11-21 16:58:13,125 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp0z6spsbt
+2023-11-21 16:58:13,160 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp43ifjnrz
+2023-11-21 16:58:13,303 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp9jzoq2t8
+2023-11-21 16:58:13,502 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:13,502 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:13,888 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:14,192 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NDI3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Mzgy', 'versionIndex': 16}}}
+2023-11-21 16:58:14,193 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:14,193 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:14,193 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:14,194 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:14,195 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:14,197 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-21 16:58:14,894 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:14,975 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp7slydd9k
+2023-11-21 16:58:15,522 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:15,523 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:15,553 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpgxj55322
+2023-11-21 16:58:15,572 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpiibe0ld9
+2023-11-21 16:58:15,587 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmphdr5b14m
+2023-11-21 16:58:15,747 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpuwhybav_
+2023-11-21 16:58:15,899 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:16,616 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NDUy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NDI3', 'versionIndex': 17}}}
+2023-11-21 16:58:16,616 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:16,616 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:16,618 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:16,618 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:16,908 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:17,462 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp18jl61xt
+2023-11-21 16:58:17,542 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:17,542 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:17,920 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:18,031 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjgk3kj_e
+2023-11-21 16:58:18,032 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpokqkcn0_
+2023-11-21 16:58:18,056 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp0_w6x300
+2023-11-21 16:58:18,216 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpnul98c9a
+2023-11-21 16:58:19,241 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:19,242 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NDgx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NDUy', 'versionIndex': 18}}}
+2023-11-21 16:58:19,242 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:19,243 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:19,243 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:19,244 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:19,245 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:19,561 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:19,561 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:19,935 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:20,218 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpbom4gww2
+2023-11-21 16:58:20,784 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjs6nf_96
+2023-11-21 16:58:20,821 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpnur806a2
+2023-11-21 16:58:20,843 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp00e4zuup
+2023-11-21 16:58:20,955 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp51yo11_o
+2023-11-21 16:58:21,068 DEBUG   SystemMonitor:12196 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 16:58:21,613 ERROR   gpu       :12196 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 16:58:21,615 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:21,615 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:21,775 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NTE1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NDgx', 'versionIndex': 19}}}
+2023-11-21 16:58:21,775 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:21,776 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:21,777 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:21,777 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:21,948 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:21,948 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:22,658 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjdf68iql
+2023-11-21 16:58:23,227 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpcvqvdr6m
+2023-11-21 16:58:23,244 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpnn780kf7
+2023-11-21 16:58:23,259 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpb2mp4q1r
+2023-11-21 16:58:23,405 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpx7l81g8p
+2023-11-21 16:58:23,617 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:23,617 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:23,970 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:24,172 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NTUw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NTE1', 'versionIndex': 20}}}
+2023-11-21 16:58:24,172 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:24,173 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:24,173 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:24,174 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:24,278 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:24,944 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpvwa4vrnj
+2023-11-21 16:58:24,975 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:25,520 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpoatw0h5n
+2023-11-21 16:58:25,547 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpmjdadrat
+2023-11-21 16:58:25,611 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpq_pw48yu
+2023-11-21 16:58:25,629 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:25,629 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:25,716 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpx6yauw7_
+2023-11-21 16:58:25,988 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:26,824 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NTc0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NTUw', 'versionIndex': 21}}}
+2023-11-21 16:58:26,824 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:26,825 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:26,825 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:26,825 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:26,826 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:26,996 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:27,629 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpovsywp47
+2023-11-21 16:58:27,640 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:27,640 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:28,011 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:28,194 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpgjfavcz6
+2023-11-21 16:58:28,196 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpxn6djc_0
+2023-11-21 16:58:28,233 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpsn_mdmi_
+2023-11-21 16:58:28,373 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpvgt4euml
+2023-11-21 16:58:29,249 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NjE0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NTc0', 'versionIndex': 22}}}
+2023-11-21 16:58:29,249 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:29,249 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:29,251 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:29,251 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:29,333 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:29,648 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:29,648 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:30,020 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:30,020 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:30,043 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpw9vqi0lt
+2023-11-21 16:58:30,621 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp2rpjid6u
+2023-11-21 16:58:30,623 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8o8khh83
+2023-11-21 16:58:30,652 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpapvk49dv
+2023-11-21 16:58:30,890 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpbi95_6x9
+2023-11-21 16:58:31,661 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:31,661 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:31,715 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NjM2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NjE0', 'versionIndex': 23}}}
+2023-11-21 16:58:31,716 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:31,716 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:31,717 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:31,717 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:32,034 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:32,035 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:32,589 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmptblssuh1
+2023-11-21 16:58:33,164 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpgq7okr5g
+2023-11-21 16:58:33,179 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpmzh_6sha
+2023-11-21 16:58:33,207 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1xn_zknq
+2023-11-21 16:58:33,360 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpdax01iv_
+2023-11-21 16:58:33,680 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:33,680 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:34,060 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:34,213 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NjY5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NjM2', 'versionIndex': 24}}}
+2023-11-21 16:58:34,213 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:34,213 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:34,214 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:34,215 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:34,215 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:34,358 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:35,062 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:35,136 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp_fji5wab
+2023-11-21 16:58:35,698 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:35,698 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:35,734 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpdjv31uxd
+2023-11-21 16:58:35,750 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpv23s7pgw
+2023-11-21 16:58:35,788 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1gglo__0
+2023-11-21 16:58:35,907 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmprxzdk4nn
+2023-11-21 16:58:36,072 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:36,730 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Njkz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NjY5', 'versionIndex': 25}}}
+2023-11-21 16:58:36,730 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:36,730 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:36,731 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:36,731 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:37,078 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:37,679 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpgd88gbva
+2023-11-21 16:58:37,719 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:37,719 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:38,082 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:38,245 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp36f9y6o_
+2023-11-21 16:58:38,246 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpls84y7n6
+2023-11-21 16:58:38,281 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpcrz2ym6r
+2023-11-21 16:58:38,423 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp2wdhcqmc
+2023-11-21 16:58:39,255 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NzIy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Njkz', 'versionIndex': 26}}}
+2023-11-21 16:58:39,255 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:39,255 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:39,256 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:39,257 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:39,257 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:39,390 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:39,744 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:39,744 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:40,016 INFO    wandb-upload_0:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpvl6fs09y
+2023-11-21 16:58:40,106 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:40,107 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:40,592 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1fqcny62
+2023-11-21 16:58:40,593 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjba2dqs8
+2023-11-21 16:58:40,639 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpuf50r0xx
+2023-11-21 16:58:40,778 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp7tja629v
+2023-11-21 16:58:41,582 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NzQ2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NzIy', 'versionIndex': 27}}}
+2023-11-21 16:58:41,582 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:41,582 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:41,583 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:41,583 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:41,764 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:41,764 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:42,132 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:42,132 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:42,449 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpxba74trv
+2023-11-21 16:58:43,013 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpd6d50xe3
+2023-11-21 16:58:43,018 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp6eudpxcv
+2023-11-21 16:58:43,048 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpar9r8ciy
+2023-11-21 16:58:43,197 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpcsj9x324
+2023-11-21 16:58:43,787 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:43,787 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:44,148 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:44,443 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:44,825 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Nzcy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5NzQ2', 'versionIndex': 28}}}
+2023-11-21 16:58:44,825 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:44,825 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:44,825 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:44,826 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:44,826 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:45,157 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:45,679 INFO    wandb-upload_0:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpowy103qt
+2023-11-21 16:58:45,803 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:45,803 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:46,170 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:46,267 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp21lcs004
+2023-11-21 16:58:46,275 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8xcnuik9
+2023-11-21 16:58:46,305 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp5m6ztu3s
+2023-11-21 16:58:46,453 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpnbcbe7_t
+2023-11-21 16:58:47,253 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5Nzcy', 'versionIndex': 29}}}
+2023-11-21 16:58:47,253 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:47,253 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:47,254 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:47,254 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:47,811 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:47,812 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:48,184 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:48,184 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:48,242 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp9m2fc5lw
+2023-11-21 16:58:48,808 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp_g4fe39_
+2023-11-21 16:58:48,811 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmperdsbk45
+2023-11-21 16:58:48,845 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpx60bwhca
+2023-11-21 16:58:48,997 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmppecc_p5q
+2023-11-21 16:58:49,197 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:49,490 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:49,827 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:49,827 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:49,910 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODQ2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODA5', 'versionIndex': 30}}}
+2023-11-21 16:58:49,910 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:49,910 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:49,910 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:49,912 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:49,912 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:50,206 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:50,206 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:50,706 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp9r8t18m6
+2023-11-21 16:58:51,219 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:51,267 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpz38c1qa8
+2023-11-21 16:58:51,283 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpym84jq47
+2023-11-21 16:58:51,300 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpjdtm77kt
+2023-11-21 16:58:51,458 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpqa1o1r_a
+2023-11-21 16:58:51,871 ERROR   gpu       :12196 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 16:58:51,873 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:51,873 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:52,233 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:52,327 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODcw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODQ2', 'versionIndex': 31}}}
+2023-11-21 16:58:52,327 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:52,328 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:52,328 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:52,329 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:53,150 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp50r3cbad
+2023-11-21 16:58:53,247 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:53,248 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:53,704 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpi9vhn0fl
+2023-11-21 16:58:53,715 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpmwbg7d75
+2023-11-21 16:58:53,736 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpa4lqzs8f
+2023-11-21 16:58:53,886 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:53,886 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:54,257 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:54,550 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-21 16:58:54,622 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpyx4ycbq0
+2023-11-21 16:58:55,515 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODk1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODcw', 'versionIndex': 32}}}
+2023-11-21 16:58:55,515 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:55,515 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:55,515 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:58:55,517 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:55,518 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:55,890 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:55,890 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:56,272 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:56,340 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpioozsj_w
+2023-11-21 16:58:56,927 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp6kpbybf6
+2023-11-21 16:58:56,936 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp9lyckq0o
+2023-11-21 16:58:56,940 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp4ql85vff
+2023-11-21 16:58:57,125 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp93tk8spq
+2023-11-21 16:58:57,275 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:57,894 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:57,894 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:57,897 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5OTM5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5ODk1', 'versionIndex': 33}}}
+2023-11-21 16:58:57,898 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:58:57,898 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:58:57,898 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:58:57,899 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:58:58,280 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:58,280 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:58:58,676 INFO    wandb-upload_2:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp1zeb2qw2
+2023-11-21 16:58:59,233 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpcln8un4g
+2023-11-21 16:58:59,236 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpg89dz9iq
+2023-11-21 16:58:59,266 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpys1ibdch
+2023-11-21 16:58:59,283 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:58:59,418 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp5kxsq39m
+2023-11-21 16:58:59,909 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:58:59,909 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:00,292 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:00,402 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5OTY5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5OTM5', 'versionIndex': 34}}}
+2023-11-21 16:59:00,402 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:59:00,403 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:59:00,403 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:59:00,404 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:59:01,304 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:01,305 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:59:01,353 INFO    wandb-upload_0:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp4r3n4ix5
+2023-11-21 16:59:01,925 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:01,925 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:01,925 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp6bp1egck
+2023-11-21 16:59:01,940 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp_9gisy5v
+2023-11-21 16:59:01,956 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpdv2gwebs
+2023-11-21 16:59:02,093 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp3alh_59s
+2023-11-21 16:59:02,310 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:02,999 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODI5OTky', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5OTY5', 'versionIndex': 35}}}
+2023-11-21 16:59:02,999 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:59:03,000 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:59:03,000 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:59:03,001 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:59:03,001 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:59:03,316 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:59:03,930 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpm1g3ndh9
+2023-11-21 16:59:03,942 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:03,942 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:04,327 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:04,505 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpgbgj_8g5
+2023-11-21 16:59:04,507 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp8dzy3w5m
+2023-11-21 16:59:04,520 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpbilxocfo
+2023-11-21 16:59:04,688 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpbo2m4b1f
+2023-11-21 16:59:05,341 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:05,596 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODMwMDIz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODI5OTky', 'versionIndex': 36}}}
+2023-11-21 16:59:05,596 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:59:05,596 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:59:05,597 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:59:05,597 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:59:05,949 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:05,949 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:06,351 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:59:06,672 INFO    wandb-upload_0:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpulc8n24n
+2023-11-21 16:59:07,253 INFO    wandb-upload_3:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmp_1sdegw6
+2023-11-21 16:59:07,257 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpbxu1rrnc
+2023-11-21 16:59:07,272 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpviujr4dg
+2023-11-21 16:59:07,357 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:07,440 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpiok3kb81
+2023-11-21 16:59:07,966 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:07,966 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:08,347 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODMwMDUx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODMwMDIz', 'versionIndex': 37}}}
+2023-11-21 16:59:08,347 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:59:08,347 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 16:59:08,347 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:59:08,348 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:59:08,349 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:59:08,370 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:08,370 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:59:09,218 INFO    wandb-upload_3:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpm8vfkvk0
+2023-11-21 16:59:09,375 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:09,786 INFO    wandb-upload_4:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmprs8eov7b
+2023-11-21 16:59:09,787 INFO    wandb-upload_0:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpm00x0a8u
+2023-11-21 16:59:09,812 INFO    wandb-upload_1:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpmotv_25q
+2023-11-21 16:59:09,954 INFO    wandb-upload_2:12196 [upload_job.py:push():89] Uploaded file C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpr97kap8k
+2023-11-21 16:59:09,982 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:09,983 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:10,380 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\output.log
+2023-11-21 16:59:11,240 INFO    SenderThread:12196 [sender.py:send_request_log_artifact():1446] logged artifact run_vvuxcc82_model - {'id': 'QXJ0aWZhY3Q6NjQ0ODMwMDkx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNzUzODgzMA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQ0ODMwMDUx', 'versionIndex': 38}}}
+2023-11-21 16:59:11,240 DEBUG   SenderThread:12196 [sender.py:send():380] send: history
+2023-11-21 16:59:11,240 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: summary_record
+2023-11-21 16:59:11,241 INFO    SenderThread:12196 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-21 16:59:11,241 DEBUG   SenderThread:12196 [sender.py:send_request():407] send_request: log_artifact
+2023-11-21 16:59:11,390 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_165719-vvuxcc82\files\wandb-summary.json
+2023-11-21 16:59:11,994 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:11,994 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 16:59:12,189 INFO    wandb-upload_4:12196 [upload_job.py:push():86] Skipped uploading C:\Users\rs1044\AppData\Local\wandb\wandb\artifacts\staging\tmpzmnh9ose

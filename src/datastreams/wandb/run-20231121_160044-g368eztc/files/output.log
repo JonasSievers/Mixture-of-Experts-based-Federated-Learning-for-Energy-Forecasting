@@ -1,0 +1,1080 @@
+
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_03\assets
+INFO:tensorflow:Assets written to: models\dense_model_03\assets
+User:  1
+Already running
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_03\assets
+INFO:tensorflow:Assets written to: models\dense_model_03\assets
+User:  1
+Already running
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+User:  1
+Already running
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+User:  1
+Already running
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': None}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.permutation at 0x000002660A5CDEE0>
+    args: (<tf.Tensor 'args_0:0' shape=() dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.slice_batch_indices at 0x000002660A5CE340>
+    args: (<tf.Tensor 'args_0:0' shape=(5984,) dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.slice_inputs.<locals>.grab_batch at 0x000002660A5CEA20>
+    args: (<tf.Tensor 'args_0:0' shape=(16,) dtype=int64>, (<tf.Tensor 'args_1:0' shape=(5984, 24, 8) dtype=float32>, <tf.Tensor 'args_2:0' shape=(5984,) dtype=float32>))
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.train_function at 0x000002660A5CEDE0>
+    args: (<tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x00000266090A3810>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function at 0x000002660A5CE5C0>
+    args: (<keras.src.engine.functional.Functional object at 0x00000266050EBF10>, <tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x00000266090A3810>)
+    kwargs: None
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function.<locals>.run_step at 0x000002660A5CDBC0>
+    args: ((<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(16,) dtype=float32>),)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/dropout/SelectV2:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method LossFunctionWrapper.call of <keras.src.losses.LossFunctionWrapper object at 0x0000026609F6AFD0>>
+    args: (<tf.Tensor 'ExpandDims:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.update_state of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: (<tf.Tensor 'mean_squared_error/weighted_loss/value:0' shape=() dtype=float32>,)
+    kwargs: {'sample_weight': <tf.Tensor 'strided_slice:0' shape=() dtype=int32>}
+INFO:tensorflow:Converted call: <function ReplicaContextBase.all_reduce.<locals>.batch_all_reduce at 0x000002660A5CEFC0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/Tensordot/MatMul/MatMul:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/MatMul/MatMul_1:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/BiasAdd/BiasAddGrad:0' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_28/kernel:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_28/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_29/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_29/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_30/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_30/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_31/kernel:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_31/bias:0' shape=(1,) dtype=float32>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.train_function at 0x000002660A5CEDE0>
+    args: (<tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660A342FD0>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function at 0x000002660A5CE5C0>
+    args: (<keras.src.engine.functional.Functional object at 0x00000266050EBF10>, <tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660A342FD0>)
+    kwargs: None
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function.<locals>.run_step at 0x000002660A5CEFC0>
+    args: ((<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(16,) dtype=float32>),)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/dropout/SelectV2:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method LossFunctionWrapper.call of <keras.src.losses.LossFunctionWrapper object at 0x0000026609F6AFD0>>
+    args: (<tf.Tensor 'ExpandDims:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.update_state of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: (<tf.Tensor 'mean_squared_error/weighted_loss/value:0' shape=() dtype=float32>,)
+    kwargs: {'sample_weight': <tf.Tensor 'strided_slice:0' shape=() dtype=int32>}
+INFO:tensorflow:Converted call: <function ReplicaContextBase.all_reduce.<locals>.batch_all_reduce at 0x000002660A5CFF60>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/Tensordot/MatMul/MatMul:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/MatMul/MatMul_1:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/BiasAdd/BiasAddGrad:0' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_28/kernel:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': None}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Placeholder:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.permutation at 0x000002660A5CDEE0>
+    args: (<tf.Tensor 'args_0:0' shape=() dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.slice_batch_indices at 0x000002660A5CE340>
+    args: (<tf.Tensor 'args_0:0' shape=(5984,) dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.slice_inputs.<locals>.grab_batch at 0x000002660A5CEA20>
+    args: (<tf.Tensor 'args_0:0' shape=(16,) dtype=int64>, (<tf.Tensor 'args_1:0' shape=(5984, 24, 8) dtype=float32>, <tf.Tensor 'args_2:0' shape=(5984,) dtype=float32>))
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.train_function at 0x000002660A5CEDE0>
+    args: (<tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x00000266090A3810>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function at 0x000002660A5CE5C0>
+    args: (<keras.src.engine.functional.Functional object at 0x00000266050EBF10>, <tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x00000266090A3810>)
+    kwargs: None
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function.<locals>.run_step at 0x000002660A5CDBC0>
+    args: ((<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(16,) dtype=float32>),)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/dropout/SelectV2:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method LossFunctionWrapper.call of <keras.src.losses.LossFunctionWrapper object at 0x0000026609F6AFD0>>
+    args: (<tf.Tensor 'ExpandDims:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.update_state of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: (<tf.Tensor 'mean_squared_error/weighted_loss/value:0' shape=() dtype=float32>,)
+    kwargs: {'sample_weight': <tf.Tensor 'strided_slice:0' shape=() dtype=int32>}
+INFO:tensorflow:Converted call: <function ReplicaContextBase.all_reduce.<locals>.batch_all_reduce at 0x000002660A5CEFC0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/Tensordot/MatMul/MatMul:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/MatMul/MatMul_1:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/BiasAdd/BiasAddGrad:0' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_28/kernel:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_28/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_29/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_29/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_30/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_30/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_31/kernel:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CE480>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CEFC0>
+    args: (<tf.Variable 'dense_31/bias:0' shape=(1,) dtype=float32>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.train_function at 0x000002660A5CEDE0>
+    args: (<tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660A342FD0>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function at 0x000002660A5CE5C0>
+    args: (<keras.src.engine.functional.Functional object at 0x00000266050EBF10>, <tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660A342FD0>)
+    kwargs: None
+INFO:tensorflow:Converted call: <function Model.make_train_function.<locals>.step_function.<locals>.run_step at 0x000002660A5CEFC0>
+    args: ((<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(16,) dtype=float32>),)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': True}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/dropout/SelectV2:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method LossFunctionWrapper.call of <keras.src.losses.LossFunctionWrapper object at 0x0000026609F6AFD0>>
+    args: (<tf.Tensor 'ExpandDims:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.update_state of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: (<tf.Tensor 'mean_squared_error/weighted_loss/value:0' shape=() dtype=float32>,)
+    kwargs: {'sample_weight': <tf.Tensor 'strided_slice:0' shape=() dtype=int32>}
+INFO:tensorflow:Converted call: <function ReplicaContextBase.all_reduce.<locals>.batch_all_reduce at 0x000002660A5CFF60>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/Tensordot/MatMul/MatMul:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_28/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_29/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/Tensordot/MatMul/MatMul_1:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_30/BiasAdd/BiasAddGrad:0' shape=(16,) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/MatMul/MatMul_1:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'gradient_tape/Dense_model/dense_31/BiasAdd/BiasAddGrad:0' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_28/kernel:0' shape=(8, 16) dtype=float32>, <tf.Tensor 'IdentityN:0' shape=(8, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_28/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_29/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_29/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_30/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_30/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_31/kernel:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_31/bias:0' shape=(1,) dtype=float32>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.permutation at 0x000002660A5CDE40>
+    args: (<tf.Tensor 'args_0:0' shape=() dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.slice_batch_indices at 0x000002660A5CF600>
+    args: (<tf.Tensor 'args_0:0' shape=(1680,) dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.slice_inputs.<locals>.grab_batch at 0x000002660A5CFB00>
+    args: (<tf.Tensor 'args_0:0' shape=(16,) dtype=int64>, (<tf.Tensor 'args_1:0' shape=(1680, 24, 8) dtype=float32>, <tf.Tensor 'args_2:0' shape=(1680,) dtype=float32>))
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_test_function.<locals>.test_function at 0x000002660A5CF9C0>
+    args: (<tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660AB3EF10>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_test_function.<locals>.step_function at 0x000002660A5CFA60>
+    args: (<keras.src.engine.functional.Functional object at 0x00000266050EBF10>, <tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660AB3EF10>)
+    kwargs: None
+INFO:tensorflow:Converted call: <function Model.make_test_function.<locals>.step_function.<locals>.run_step at 0x000002660AB70680>
+    args: ((<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(16,) dtype=float32>),)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method LossFunctionWrapper.call of <keras.src.losses.LossFunctionWrapper object at 0x0000026609F6AFD0>>
+    args: (<tf.Tensor 'ExpandDims:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.update_state of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: (<tf.Tensor 'mean_squared_error/weighted_loss/value:0' shape=() dtype=float32>,)
+    kwargs: {'sample_weight': <tf.Tensor 'strided_slice:0' shape=() dtype=int32>}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function trace_model_call.<locals>._wrapped_model at 0x000002660AB70540>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method CallFunctionSpec.set_arg_value of <keras.src.utils.layer_utils.CallFunctionSpec object at 0x0000026601C78850>>
+    args: ('training', False, (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,), {})
+    kwargs: {'inputs_in_args': True}
+INFO:tensorflow:Converted call: <keras.src.engine.functional.Functional object at 0x00000266050EBF10>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function flatten at 0x00000265CD3F7A60>
+    args: (<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>,)
+    kwargs: None
+INFO:tensorflow:Converted call: <class 'zip'>
+    args: (['dense_31'], [<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>])
+    kwargs: None
+INFO:tensorflow:Converted call: <function canonicalize_signatures.<locals>.signature_wrapper at 0x000002660AB739C0>
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: ConcreteFunction Input Parameters:
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(16, 24, 8), dtype=tf.float32, name='input_8')
+Output Type:
+  Dict[['dense_31', TensorSpec(shape=(16, 1), dtype=tf.float32, name=None)]]
+Captures:
+  2637283640912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283643024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: <function _normalize_outputs at 0x00000265C9D32660>
+    args: ({'dense_31': <tf.Tensor 'StatefulPartitionedCall:0' shape=(16, 1) dtype=float32>}, b'__inference__wrapped_model_360128', 'serving_default')
+    kwargs: None
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_28/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:1' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_29/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:2' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_29/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:3' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_30/kernel:0' shape=(16, 16) dtype=float32>, <tf.Tensor 'IdentityN:4' shape=(16, 16) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_30/bias:0' shape=(16,) dtype=float32>, <tf.Tensor 'IdentityN:5' shape=(16,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_31/kernel:0' shape=(384, 1) dtype=float32>, <tf.Tensor 'IdentityN:6' shape=(384, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function StrategyExtendedV2._replica_ctx_update.<locals>.merge_fn at 0x000002660A5CFCE0>
+    args: (<tensorflow.python.distribute.distribute_lib._DefaultDistributionStrategy object at 0x000002658607F390>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Optimizer._distributed_apply_gradients_fn.<locals>.apply_grad_to_update_var at 0x000002660A5CFF60>
+    args: (<tf.Variable 'dense_31/bias:0' shape=(1,) dtype=float32>, <tf.Tensor 'IdentityN:7' shape=(1,) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.permutation at 0x000002660A5CDE40>
+    args: (<tf.Tensor 'args_0:0' shape=() dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.__init__.<locals>.slice_batch_indices at 0x000002660A5CF600>
+    args: (<tf.Tensor 'args_0:0' shape=(1680,) dtype=int64>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function TensorLikeDataAdapter.slice_inputs.<locals>.grab_batch at 0x000002660A5CFB00>
+    args: (<tf.Tensor 'args_0:0' shape=(16,) dtype=int64>, (<tf.Tensor 'args_1:0' shape=(1680, 24, 8) dtype=float32>, <tf.Tensor 'args_2:0' shape=(1680,) dtype=float32>))
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_test_function.<locals>.test_function at 0x000002660A5CF9C0>
+    args: (<tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660AB3EF10>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function Model.make_test_function.<locals>.step_function at 0x000002660A5CFA60>
+    args: (<keras.src.engine.functional.Functional object at 0x00000266050EBF10>, <tensorflow.python.data.ops.iterator_ops.OwnedIterator object at 0x000002660AB3EF10>)
+    kwargs: None
+INFO:tensorflow:Converted call: <function Model.make_test_function.<locals>.step_function.<locals>.run_step at 0x000002660AB70680>
+    args: ((<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>, <tf.Tensor 'IteratorGetNext:1' shape=(16,) dtype=float32>),)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'IteratorGetNext:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method LossFunctionWrapper.call of <keras.src.losses.LossFunctionWrapper object at 0x0000026609F6AFD0>>
+    args: (<tf.Tensor 'ExpandDims:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.update_state of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: (<tf.Tensor 'mean_squared_error/weighted_loss/value:0' shape=() dtype=float32>,)
+    kwargs: {'sample_weight': <tf.Tensor 'strided_slice:0' shape=() dtype=int32>}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method MeanMetricWrapper.update_state of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: (<tf.Tensor 'ExpandDims_1:0' shape=(16, 1) dtype=float32>, <tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>)
+    kwargs: {'sample_weight': None}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function trace_model_call.<locals>._wrapped_model at 0x000002660AB70540>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method CallFunctionSpec.set_arg_value of <keras.src.utils.layer_utils.CallFunctionSpec object at 0x0000026601C78850>>
+    args: ('training', False, (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,), {})
+    kwargs: {'inputs_in_args': True}
+INFO:tensorflow:Converted call: <keras.src.engine.functional.Functional object at 0x00000266050EBF10>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function flatten at 0x00000265CD3F7A60>
+    args: (<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>,)
+    kwargs: None
+INFO:tensorflow:Converted call: <class 'zip'>
+    args: (['dense_31'], [<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>])
+    kwargs: None
+INFO:tensorflow:Converted call: <function canonicalize_signatures.<locals>.signature_wrapper at 0x000002660AB739C0>
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: ConcreteFunction Input Parameters:
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(16, 24, 8), dtype=tf.float32, name='input_8')
+Output Type:
+  Dict[['dense_31', TensorSpec(shape=(16, 1), dtype=tf.float32, name=None)]]
+Captures:
+  2637283640912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283643024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: <function _normalize_outputs at 0x00000265C9D32660>
+    args: ({'dense_31': <tf.Tensor 'StatefulPartitionedCall:0' shape=(16, 1) dtype=float32>}, b'__inference__wrapped_model_360128', 'serving_default')
+    kwargs: None
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function trace_model_call.<locals>._wrapped_model at 0x000002660AD21580>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method CallFunctionSpec.set_arg_value of <keras.src.utils.layer_utils.CallFunctionSpec object at 0x0000026601C78850>>
+    args: ('training', False, (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,), {})
+    kwargs: {'inputs_in_args': True}
+INFO:tensorflow:Converted call: <keras.src.engine.functional.Functional object at 0x00000266050EBF10>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function flatten at 0x00000265CD3F7A60>
+    args: (<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>,)
+    kwargs: None
+INFO:tensorflow:Converted call: <class 'zip'>
+    args: (['dense_31'], [<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>])
+    kwargs: None
+INFO:tensorflow:Converted call: <function canonicalize_signatures.<locals>.signature_wrapper at 0x000002660AD20FE0>
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: ConcreteFunction Input Parameters:
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(16, 24, 8), dtype=tf.float32, name='input_8')
+Output Type:
+  Dict[['dense_31', TensorSpec(shape=(16, 1), dtype=tf.float32, name=None)]]
+Captures:
+  2637283640912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283643024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: <function _normalize_outputs at 0x00000265C9D32660>
+    args: ({'dense_31': <tf.Tensor 'StatefulPartitionedCall:0' shape=(16, 1) dtype=float32>}, b'__inference__wrapped_model_363453', 'serving_default')
+    kwargs: None
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function trace_model_call.<locals>._wrapped_model at 0x000002660AD21580>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method CallFunctionSpec.set_arg_value of <keras.src.utils.layer_utils.CallFunctionSpec object at 0x0000026601C78850>>
+    args: ('training', False, (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,), {})
+    kwargs: {'inputs_in_args': True}
+INFO:tensorflow:Converted call: <keras.src.engine.functional.Functional object at 0x00000266050EBF10>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function flatten at 0x00000265CD3F7A60>
+    args: (<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>,)
+    kwargs: None
+INFO:tensorflow:Converted call: <class 'zip'>
+    args: (['dense_31'], [<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>])
+    kwargs: None
+INFO:tensorflow:Converted call: <function canonicalize_signatures.<locals>.signature_wrapper at 0x000002660AD20FE0>
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: ConcreteFunction Input Parameters:
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(16, 24, 8), dtype=tf.float32, name='input_8')
+Output Type:
+  Dict[['dense_31', TensorSpec(shape=(16, 1), dtype=tf.float32, name=None)]]
+Captures:
+  2637283640912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283643024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: <function _normalize_outputs at 0x00000265C9D32660>
+    args: ({'dense_31': <tf.Tensor 'StatefulPartitionedCall:0' shape=(16, 1) dtype=float32>}, b'__inference__wrapped_model_363453', 'serving_default')
+    kwargs: None
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function trace_model_call.<locals>._wrapped_model at 0x000002660A053D80>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method CallFunctionSpec.set_arg_value of <keras.src.utils.layer_utils.CallFunctionSpec object at 0x0000026601C78850>>
+    args: ('training', False, (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,), {})
+    kwargs: {'inputs_in_args': True}
+INFO:tensorflow:Converted call: <keras.src.engine.functional.Functional object at 0x00000266050EBF10>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function flatten at 0x00000265CD3F7A60>
+    args: (<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>,)
+    kwargs: None
+INFO:tensorflow:Converted call: <class 'zip'>
+    args: (['dense_31'], [<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>])
+    kwargs: None
+INFO:tensorflow:Converted call: <function canonicalize_signatures.<locals>.signature_wrapper at 0x000002658D374180>
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: ConcreteFunction Input Parameters:
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(16, 24, 8), dtype=tf.float32, name='input_8')
+Output Type:
+  Dict[['dense_31', TensorSpec(shape=(16, 1), dtype=tf.float32, name=None)]]
+Captures:
+  2637283640912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283643024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: <function _normalize_outputs at 0x00000265C9D32660>
+    args: ({'dense_31': <tf.Tensor 'StatefulPartitionedCall:0' shape=(16, 1) dtype=float32>}, b'__inference__wrapped_model_366778', 'serving_default')
+    kwargs: None
+INFO:tensorflow:Assets written to: models\dense_model_03\assets
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.Mean object at 0x0000026593614CD0>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x0000026609E9F490>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Reduce.result of <keras.src.metrics.base_metric.MeanMetricWrapper object at 0x000002660A40B790>>
+    args: ()
+    kwargs: {}
+INFO:tensorflow:Converted call: <function trace_model_call.<locals>._wrapped_model at 0x000002660A053D80>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method CallFunctionSpec.set_arg_value of <keras.src.utils.layer_utils.CallFunctionSpec object at 0x0000026601C78850>>
+    args: ('training', False, (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,), {})
+    kwargs: {'inputs_in_args': True}
+INFO:tensorflow:Converted call: <keras.src.engine.functional.Functional object at 0x00000266050EBF10>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Functional.call of <keras.src.engine.functional.Functional object at 0x00000266050EBF10>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x00000266090A3910>>
+    args: (<tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609118250>>
+    args: (<tf.Tensor 'Dense_model/dense_28/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x0000026609F69550>>
+    args: (<tf.Tensor 'Dense_model/dense_29/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dropout.call of <keras.src.layers.regularization.dropout.Dropout object at 0x000002660A59B310>>
+    args: (<tf.Tensor 'Dense_model/dense_30/Relu:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {'training': False}
+INFO:tensorflow:Converted call: <bound method Flatten.call of <keras.src.layers.reshaping.flatten.Flatten object at 0x0000026609F99DD0>>
+    args: (<tf.Tensor 'Dense_model/dropout_7/Identity:0' shape=(16, 24, 16) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <bound method Dense.call of <keras.src.layers.core.dense.Dense object at 0x000002660A0B2010>>
+    args: (<tf.Tensor 'Dense_model/flatten_7/Reshape:0' shape=(16, 384) dtype=float32>,)
+    kwargs: {}
+INFO:tensorflow:Converted call: <function flatten at 0x00000265CD3F7A60>
+    args: (<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>,)
+    kwargs: None
+INFO:tensorflow:Converted call: <class 'zip'>
+    args: (['dense_31'], [<tf.Tensor 'Dense_model/dense_31/BiasAdd:0' shape=(16, 1) dtype=float32>])
+    kwargs: None
+INFO:tensorflow:Converted call: <function canonicalize_signatures.<locals>.signature_wrapper at 0x000002658D374180>
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: ConcreteFunction Input Parameters:
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(16, 24, 8), dtype=tf.float32, name='input_8')
+Output Type:
+  Dict[['dense_31', TensorSpec(shape=(16, 1), dtype=tf.float32, name=None)]]
+Captures:
+  2637283640912: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641104: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283641680: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642448: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283642832: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  2637283643024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+    args: ()
+    kwargs: {'input_8': <tf.Tensor 'input_8:0' shape=(16, 24, 8) dtype=float32>}
+INFO:tensorflow:Converted call: <function _normalize_outputs at 0x00000265C9D32660>
+    args: ({'dense_31': <tf.Tensor 'StatefulPartitionedCall:0' shape=(16, 1) dtype=float32>}, b'__inference__wrapped_model_366778', 'serving_default')
+    kwargs: None
+INFO:tensorflow:Assets written to: models\dense_model_03\assets
+User:  1
+Already running
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+User:  1
+Already running
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_01\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_02\assets
+INFO:tensorflow:Assets written to: models\dense_model_03\assets

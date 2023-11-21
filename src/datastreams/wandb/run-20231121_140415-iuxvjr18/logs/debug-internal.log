@@ -1,0 +1,784 @@
+2023-11-21 14:04:19,559 INFO    StreamThr :28784 [internal.py:wandb_internal():86] W&B internal server running at pid: 28784, started at: 2023-11-21 14:04:19.559775
+2023-11-21 14:04:19,560 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status
+2023-11-21 14:04:19,561 INFO    WriterThread:28784 [datastore.py:open_for_write():85] open: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\run-iuxvjr18.wandb
+2023-11-21 14:04:19,562 DEBUG   SenderThread:28784 [sender.py:send():380] send: header
+2023-11-21 14:04:19,562 DEBUG   SenderThread:28784 [sender.py:send():380] send: run
+2023-11-21 14:04:20,178 INFO    SenderThread:28784 [dir_watcher.py:__init__():211] watching files in: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files
+2023-11-21 14:04:20,178 INFO    SenderThread:28784 [sender.py:_start_run_threads():1124] run started: iuxvjr18 with start time 1700571858.569863
+2023-11-21 14:04:20,189 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: check_version
+2023-11-21 14:04:20,189 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: check_version
+2023-11-21 14:04:20,520 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: run_start
+2023-11-21 14:04:20,527 DEBUG   HandlerThread:28784 [system_info.py:__init__():32] System info init
+2023-11-21 14:04:20,527 DEBUG   HandlerThread:28784 [system_info.py:__init__():47] System info init done
+2023-11-21 14:04:20,527 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:04:20,527 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:04:20,527 INFO    HandlerThread:28784 [system_monitor.py:probe():214] Collecting system info
+2023-11-21 14:04:20,533 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:04:20,537 DEBUG   HandlerThread:28784 [system_info.py:probe():196] Probing system
+2023-11-21 14:04:20,537 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:04:20,538 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:04:20,543 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:04:20,549 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:04:20,550 DEBUG   HandlerThread:28784 [system_info.py:_probe_git():181] Probing git
+2023-11-21 14:04:20,550 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:04:20,551 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:04:20,647 DEBUG   HandlerThread:28784 [system_info.py:_probe_git():189] Probing git done
+2023-11-21 14:04:20,647 DEBUG   HandlerThread:28784 [system_info.py:probe():244] Probing system done
+2023-11-21 14:04:20,647 DEBUG   HandlerThread:28784 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.6', 'heartbeatAt': '2023-11-21T13:04:20.538553', 'startedAt': '2023-11-21T13:04:15.201921', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/JonasSievers/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting.git', 'commit': '932ab91029c469e2491a42023a88896d5fc9763c'}, 'email': None, 'root': 'C:/Users/rs1044/Documents/GitHub/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting', 'host': 'IPEBLANK-PC4', 'username': 'rs1044', 'executable': 'c:\\Users\\rs1044\\Documents\\GitHub\\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\\.venv\\Scripts\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3701.0, 'min': 0.0, 'max': 3701.0}, 'cpu_freq_per_core': [{'current': 3701.0, 'min': 0.0, 'max': 3701.0}], 'disk': {'/': {'total': 462.7943344116211, 'used': 330.41578674316406}}, 'gpu': 'NVIDIA GeForce GT 1030', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GT 1030', 'memory_total': 2147483648}], 'memory': {'total': 63.91092300415039}}
+2023-11-21 14:04:20,648 INFO    HandlerThread:28784 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-21 14:04:20,648 INFO    HandlerThread:28784 [system_monitor.py:probe():227] Publishing system info
+2023-11-21 14:04:20,648 DEBUG   HandlerThread:28784 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-21 14:04:20,648 DEBUG   HandlerThread:28784 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-21 14:04:20,649 INFO    HandlerThread:28784 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-21 14:04:20,649 DEBUG   SenderThread:28784 [sender.py:send():380] send: files
+2023-11-21 14:04:20,650 INFO    SenderThread:28784 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-21 14:04:20,661 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:04:20,661 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:04:20,662 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:04:20,662 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:04:20,662 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:04:20,663 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:04:20,671 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:04:20,671 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:04:20,671 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:04:20,671 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:04:20,671 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:04:20,702 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:04:20,702 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:04:20,702 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:04:20,703 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:04:21,079 DEBUG   SenderThread:28784 [sender.py:send():380] send: telemetry
+2023-11-21 14:04:21,079 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:04:21,180 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\requirements.txt
+2023-11-21 14:04:21,180 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\wandb-metadata.json
+2023-11-21 14:04:21,366 INFO    wandb-upload_0:28784 [upload_job.py:push():131] Uploaded file C:\Users\rs1044\AppData\Local\Temp\tmpkj8pj5vrwandb\21uglb8d-wandb-metadata.json
+2023-11-21 14:04:25,097 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:04:28,504 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:04:28,504 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:04:28,504 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:04:28,504 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:04:28,511 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:04:28,511 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:04:28,511 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:04:28,512 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:04:28,512 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:04:28,512 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:04:28,512 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:04:28,512 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:04:28,512 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:04:28,512 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:04:28,514 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:04:29,246 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:04:30,521 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:04:31,263 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:04:35,544 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:04:35,667 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:04:35,682 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:04:35,682 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:04:40,864 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:04:45,887 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:04:50,670 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:04:50,686 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:04:50,686 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:04:51,901 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:04:52,413 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:04:57,109 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:02,154 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:05,684 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:05:05,684 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:05:05,684 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:05:07,920 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:12,959 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:18,008 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:20,681 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:05:20,682 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:05:20,697 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:05:23,915 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:28,969 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:34,023 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:35,685 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:05:35,685 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:05:35,701 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:05:39,934 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:44,981 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:50,020 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:05:50,695 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:05:50,695 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:05:50,711 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:05:55,888 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:00,919 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:02,506 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:06:02,506 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:06:02,506 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:06:02,506 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:06:02,513 DEBUG   SenderThread:28784 [sender.py:send():380] send: telemetry
+2023-11-21 14:06:02,513 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:06:02,513 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,514 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,514 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,514 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:06:02,514 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:06:02,521 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:06:02,527 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:06:02,528 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:06:02,528 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:06:02,589 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,589 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,590 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,590 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:06:02,590 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:06:02,590 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:06:02,590 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:06:02,590 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:06:02,599 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:06:02,599 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:06:02,599 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:06:02,599 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:06:02,628 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:06:02,629 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:06:02,629 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:06:02,629 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:06:02,629 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:06:05,045 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:06:05,707 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:06:05,708 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:06:05,722 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:06:05,947 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:07,381 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:06:07,381 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:06:07,381 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:06:07,382 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:06:07,387 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:06:07,387 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:06:07,387 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:06:07,387 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:06:07,387 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:06:07,389 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:06:07,389 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:06:07,389 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:06:07,389 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:06:07,389 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:06:07,390 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:06:11,413 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:16,468 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:20,721 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:06:20,721 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:06:20,736 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:06:21,975 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:27,031 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:27,230 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:06:32,236 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:35,742 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:06:35,742 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:06:35,743 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:06:37,970 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:43,004 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:48,060 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:50,745 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:06:50,745 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:06:50,745 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:06:53,932 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:06:58,977 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:04,036 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:05,745 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:07:05,745 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:07:05,760 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:07:06,991 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:07:06,992 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:07:06,992 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:07:06,992 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:07:06,998 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:07:06,999 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:07:06,999 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:07:07,009 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:07:07,016 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:07:07,016 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:07,016 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:07,033 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:07:07,033 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:07:07,033 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:07:07,040 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:07:07,040 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:07:07,040 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:07:07,040 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:07:07,041 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:07:07,067 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:07:07,067 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:07:07,067 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:07:07,067 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:07:07,068 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:07:08,635 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:07:09,083 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:13,183 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:07:13,183 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:07:13,183 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:07:13,183 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:07:13,190 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:07:13,190 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,190 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:07:13,190 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:07:13,191 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,191 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:07:13,191 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,191 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:07:13,191 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:07:13,191 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,192 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,192 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:07:13,192 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,192 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:07:13,192 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:07:13,192 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,192 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:07:13,192 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:07:13,193 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,193 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:07:13,193 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,193 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:13,194 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:13,194 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:13,225 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:07:13,225 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:07:13,226 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:07:13,226 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:07:14,226 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:14,758 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:07:14,758 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:07:14,758 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:07:14,758 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:07:14,764 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:07:14,764 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:07:14,765 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:07:14,765 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:07:14,765 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:07:14,765 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:07:14,765 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:07:14,765 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:07:14,765 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:07:14,766 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:07:14,766 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:07:16,849 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:07:16,849 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:07:16,849 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:07:16,850 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:07:16,856 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:07:16,857 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:07:16,857 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:07:16,868 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:07:16,873 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:07:16,873 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:16,874 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:17,046 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:07:17,046 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:07:17,046 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:07:17,047 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:07:17,054 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:07:17,054 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:07:17,054 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:07:17,055 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:07:17,081 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:07:17,081 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:07:17,082 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:07:17,082 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:07:17,082 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:07:18,731 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:07:20,112 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:20,747 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:07:20,748 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:07:20,762 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:07:25,921 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:30,958 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:31,819 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:07:35,761 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:07:35,761 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:07:35,777 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:07:36,928 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:41,973 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:47,015 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:50,763 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:07:50,763 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:07:50,779 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:07:52,923 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:07:57,258 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:07:57,258 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:07:57,258 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:07:57,259 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:07:57,264 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:07:57,265 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:07:57,265 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,266 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:07:57,266 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:07:57,266 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,266 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:07:57,266 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,275 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:07:57,275 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:07:57,275 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,276 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:07:57,276 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,276 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:07:57,276 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:07:57,276 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,277 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:07:57,277 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,277 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:07:57,277 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,277 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:07:57,277 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,278 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:07:57,278 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:57,278 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:07:57,308 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:07:57,308 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:07:57,309 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:07:57,309 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:07:57,309 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:07:58,324 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:03,372 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:04,090 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:08:05,772 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:08:05,772 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:08:05,788 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:08:09,042 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:14,084 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:19,125 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:20,783 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:08:20,784 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:08:20,798 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:08:22,683 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:08:22,683 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:08:22,683 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:08:22,683 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:08:22,689 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:08:22,689 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,689 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:08:22,689 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,690 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:08:22,690 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,690 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:08:22,691 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,698 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:08:22,698 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:08:22,698 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,698 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:08:22,698 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,704 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:08:22,704 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:08:22,704 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:08:22,704 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,704 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:08:22,705 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:08:22,705 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:08:22,705 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,705 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:08:22,712 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,712 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:08:22,712 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:08:22,737 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:08:22,738 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:08:22,738 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:08:22,738 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:08:22,738 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:08:24,764 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:29,805 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:34,843 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:35,358 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:08:35,778 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:08:35,778 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:08:35,809 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:08:40,992 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:46,040 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:50,789 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:08:50,789 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:08:50,821 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:08:51,723 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:08:54,559 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:08:56,763 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:01,804 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:05,799 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:09:05,799 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:09:05,831 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:09:06,988 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:12,040 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:17,099 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:20,826 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:09:20,826 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:09:20,842 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:09:22,975 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:28,033 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:33,074 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:35,825 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:09:35,825 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:09:35,856 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:09:39,002 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:44,044 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:49,074 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:49,306 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:09:49,306 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:09:49,306 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:09:49,306 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:09:49,313 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:09:49,313 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:09:49,313 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:09:49,321 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:09:49,327 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:09:49,328 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:09:49,328 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:09:49,328 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:09:49,328 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:09:49,328 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:09:49,328 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:09:49,328 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:09:49,328 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:09:49,329 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:09:49,329 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:09:49,371 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:09:49,371 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:09:49,371 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:09:49,371 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:09:49,371 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:09:50,834 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:09:50,834 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:09:50,865 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:09:54,098 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:09:59,130 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:04,180 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:05,853 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:10:05,853 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:10:05,868 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:10:06,466 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:10:06,466 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:10:06,466 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:10:06,467 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:10:06,473 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:10:06,473 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:10:06,474 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:10:06,485 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:10:06,485 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:10:06,485 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:10:06,485 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:10:06,491 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:10:06,491 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:10:06,491 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:10:06,492 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:10:06,492 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:10:06,492 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:10:06,492 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:10:06,492 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:10:06,539 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:10:06,539 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:10:06,540 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:10:06,540 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:10:06,540 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:10:09,577 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:14,643 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:19,693 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:20,868 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:10:20,868 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:10:20,883 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:10:25,086 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:30,130 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:32,779 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:10:32,779 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:10:32,779 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:10:32,779 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:10:32,786 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:10:32,786 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:10:32,787 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:10:32,787 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:10:32,787 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:10:32,787 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:10:32,787 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:10:32,787 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:10:32,787 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:10:32,788 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:10:32,788 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:10:35,422 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:10:35,811 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:35,875 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:10:35,875 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:10:35,891 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:10:37,050 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:10:37,051 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:10:37,051 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:10:37,051 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:10:37,057 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:10:37,058 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,058 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:10:37,058 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,058 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:10:37,058 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,059 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:10:37,059 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:10:37,059 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,059 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:10:37,067 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:10:37,067 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,068 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:10:37,068 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:10:37,068 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,068 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:10:37,068 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:10:37,068 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,068 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:10:37,069 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,069 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,069 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:10:37,069 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:10:37,069 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:10:37,099 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:10:37,099 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:10:37,099 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:10:37,099 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:10:39,023 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:10:39,023 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:10:39,023 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:10:39,024 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:10:39,030 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:10:39,030 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:10:39,030 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:10:39,030 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:10:39,030 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:10:39,030 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:10:39,031 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:10:39,031 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:10:39,031 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:10:39,031 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:10:39,031 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:10:41,051 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:41,471 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:10:46,266 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:50,871 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:10:50,871 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:10:50,903 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:10:52,093 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:10:57,141 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:02,182 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:05,881 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:11:05,881 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:11:05,913 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:11:08,138 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:13,183 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:18,232 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:20,902 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:11:20,902 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:11:20,917 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:11:24,143 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:29,164 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:34,189 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:35,906 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:11:35,906 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:11:35,923 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:11:40,105 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:45,145 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:50,183 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:11:50,910 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:11:50,910 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:11:50,926 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:11:56,131 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:01,192 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:05,927 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:12:05,927 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:12:05,927 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:12:07,136 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:12,162 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:17,213 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:20,931 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:12:20,931 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:12:20,931 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:12:23,142 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:28,200 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:33,245 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:35,940 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:12:35,940 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:12:35,940 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:12:39,162 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:42,300 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:12:42,300 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:12:42,300 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:12:42,300 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:12:42,307 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:12:42,307 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,307 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:12:42,307 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,308 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:12:42,308 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,308 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:12:42,308 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:12:42,309 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,309 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:12:42,319 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,319 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:12:42,319 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:12:42,319 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,319 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:12:42,319 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:12:42,320 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:12:42,320 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:12:42,320 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:12:42,321 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:12:42,321 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:12:42,353 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:12:42,353 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:12:42,353 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:12:42,353 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:12:44,018 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:12:44,018 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:12:44,018 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:12:44,018 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:12:44,025 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:12:44,025 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:12:44,025 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:12:44,025 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:12:44,026 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:12:44,026 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:12:44,026 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:12:44,026 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:12:44,026 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:12:44,026 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:12:44,027 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:12:45,031 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:45,691 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:12:45,691 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:12:45,691 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:12:45,691 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:12:45,697 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:12:45,698 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:12:45,699 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:12:45,709 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:12:45,716 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started network monitoring
+2023-11-21 14:12:45,716 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:12:45,716 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:12:45,852 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:12:45,853 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:12:45,853 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:12:45,853 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:12:45,860 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:12:45,860 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:12:45,861 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:12:45,861 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:12:45,890 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:12:45,890 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:12:45,890 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:12:45,890 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined network monitor
+2023-11-21 14:12:45,891 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:12:47,545 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:12:50,927 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:12:50,956 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:12:50,956 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:12:51,096 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:12:51,576 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:12:56,342 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:01,381 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:05,966 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:13:05,981 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:13:05,981 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:13:07,150 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:12,189 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:17,243 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:20,974 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:13:20,989 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:13:20,989 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:13:23,206 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:28,262 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:33,292 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:35,978 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:13:36,009 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:13:36,009 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:13:39,265 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:44,293 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:49,333 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:13:50,983 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:13:51,029 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:13:51,029 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:13:55,303 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:00,326 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:05,359 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:05,992 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:14:06,037 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:14:06,037 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:14:11,232 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:16,288 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:20,994 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:14:21,056 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:14:21,056 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:14:22,203 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:27,242 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:32,273 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:36,008 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:14:36,056 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:14:36,056 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:14:38,233 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:43,258 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:48,299 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:51,024 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:14:51,070 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:14:51,070 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:14:54,278 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:14:59,326 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:04,354 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:06,036 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:15:06,082 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:15:06,082 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:15:09,368 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:14,407 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:19,435 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:21,044 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:15:21,090 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:15:21,091 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:15:25,329 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:30,381 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:35,426 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:36,053 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:15:36,100 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:15:36,100 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:15:41,387 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:46,442 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:51,060 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:15:51,124 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:15:51,124 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:15:52,324 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:15:54,509 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: resume
+2023-11-21 14:15:54,509 INFO    HandlerThread:28784 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-21 14:15:54,509 INFO    HandlerThread:28784 [system_monitor.py:start():194] Starting system monitor
+2023-11-21 14:15:54,510 INFO    SystemMonitor:28784 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-21 14:15:54,516 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started cpu monitoring
+2023-11-21 14:15:54,517 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,517 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,517 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started disk monitoring
+2023-11-21 14:15:54,517 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: pause
+2023-11-21 14:15:54,517 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,518 INFO    HandlerThread:28784 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-21 14:15:54,518 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,518 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started gpu monitoring
+2023-11-21 14:15:54,518 INFO    HandlerThread:28784 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-21 14:15:54,518 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,528 INFO    SystemMonitor:28784 [interfaces.py:start():190] Started memory monitoring
+2023-11-21 14:15:54,528 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,528 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-21 14:15:54,528 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-21 14:15:54,528 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,528 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined disk monitor
+2023-11-21 14:15:54,528 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-21 14:15:54,529 DEBUG   SenderThread:28784 [sender.py:send():380] send: config
+2023-11-21 14:15:54,529 DEBUG   SystemMonitor:28784 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-21 14:15:54,530 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:15:54,530 ERROR   gpu       :28784 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-21 14:15:54,558 ERROR   gpu       :28784 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-11-21 14:15:54,558 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-21 14:15:54,558 INFO    HandlerThread:28784 [interfaces.py:finish():202] Joined memory monitor
+2023-11-21 14:15:54,558 DEBUG   SenderThread:28784 [sender.py:send():380] send: stats
+2023-11-21 14:15:55,090 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\output.log
+2023-11-21 14:15:57,582 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:16:02,605 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:16:03,152 INFO    Thread-45 :28784 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\datastreams\wandb\run-20231121_140415-iuxvjr18\files\config.yaml
+2023-11-21 14:16:06,062 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:16:06,139 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:16:06,139 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:16:08,423 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:16:13,480 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:16:18,513 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report
+2023-11-21 14:16:21,072 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-21 14:16:21,151 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-21 14:16:21,151 DEBUG   SenderThread:28784 [sender.py:send_request():407] send_request: stop_status
+2023-11-21 14:16:24,402 DEBUG   HandlerThread:28784 [handler.py:handle_request():146] handle_request: status_report

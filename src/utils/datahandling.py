@@ -107,7 +107,13 @@ def compile_fit_evaluate_model(model, loss, metrics, X_train, y_train, max_epoch
     
     #Compile the model
     model.compile(loss=loss, optimizer=optimizer, metrics=metrics)
-    
+    history, model_user_result = fit_evaluate_model(model, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks, user= "", hyper="", optimizer=tf.keras.optimizers.Adam(learning_rate=0.001))
+
+    return history, model_user_result
+
+#This method compiles the model using Adam optimizer, fits the model, and evaluates it
+def fit_evaluate_model(model, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks, user= "", hyper="", optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)):
+      
     wandb_callback = wandb.keras.WandbCallback(save_model=False)
     
     # Train the model
@@ -118,19 +124,15 @@ def compile_fit_evaluate_model(model, loss, metrics, X_train, y_train, max_epoch
         validation_data=(X_val, y_val), 
         callbacks=callbacks + [wandb_callback],
         verbose=0,)
-    
     #Evaluate the model on test dataset
     test_loss = model.evaluate(X_test, y_test, batch_size=batch_size, verbose=0)
-
     train_times = callbacks[1].get_training_times_df()
     total_train_time = train_times["Total Training Time"][0]
     avg_time_epoch = train_times["Epoch Avg Train_time"].iloc[-1]
-
     model_user_result = pd.DataFrame(
         data=[[user, hyper, total_train_time, avg_time_epoch, test_loss[0], test_loss[1], test_loss[2], test_loss[3]]], 
         columns=["user", "architecture", "train_time", "avg_time_epoch", "mse", "rmse", "mape", "mae"]
     )
-
     wandb.log({
         'Final MSE': test_loss[0],
         'Final RMSE': test_loss[1],
@@ -139,5 +141,4 @@ def compile_fit_evaluate_model(model, loss, metrics, X_train, y_train, max_epoch
         'Total Training Time': total_train_time,
         'Average Time per Epoch': avg_time_epoch
     })
-
     return history, model_user_result

@@ -107,9 +107,10 @@ def compile_fit_evaluate_model(model, loss, metrics, X_train, y_train, max_epoch
     
     #Compile the model
     model.compile(loss=loss, optimizer=optimizer, metrics=metrics)
-    history, model_user_result = fit_evaluate_model(model, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks, user= "", hyper="", optimizer=tf.keras.optimizers.Adam(learning_rate=0.001))
+    history, model_user_result = fit_evaluate_model(model, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks, user, hyper, optimizer=tf.keras.optimizers.Adam(learning_rate=0.001))
 
     return history, model_user_result
+
 
 #This method compiles the model using Adam optimizer, fits the model, and evaluates it
 def fit_evaluate_model(model, X_train, y_train, max_epochs, batch_size, X_val, y_val, X_test, y_test, callbacks, user= "", hyper="", optimizer=tf.keras.optimizers.Adam(learning_rate=0.001)):

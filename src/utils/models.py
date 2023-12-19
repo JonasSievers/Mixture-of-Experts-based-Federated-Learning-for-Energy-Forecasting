@@ -78,6 +78,22 @@ class ImportanceRegularizationLayer(layers.Layer):
 
         return routing_logits
 
+class EinsumLayer(tf.keras.layers.Layer):
+    def __init__(self, equation, **kwargs):
+        super().__init__(**kwargs)
+        self.equation = equation
+
+    def call(self, inputs):
+        return tf.einsum(self.equation, *inputs)
+
+class TopKLayer(tf.keras.layers.Layer):
+    def __init__(self, k, **kwargs):
+        super().__init__(**kwargs)
+        self.k = k
+
+    def call(self, inputs):
+        return tf.math.top_k(inputs, k=self.k)
+    
 #Builds the expert models for the MoE Layer
 def build_expert_network(expert_units):
       expert = tf.keras.Sequential([
@@ -99,7 +115,9 @@ def build_soft_dense_moe_model(X_train, batch_size, horizon, dense_units,  exper
     experts = [build_expert_network(expert_units=expert_units)(x) for _ in range(num_experts)]
     expert_outputs = tf.stack(experts, axis=1)
     #Add and Multiply expert models with router probability
-    moe_output = tf.einsum('bsn,bnse->bse', routing_logits, expert_outputs)
+    # Einsum Layer in extra class to enable serialization
+    einsum_layer = EinsumLayer('bsn,bnse->bse')
+    moe_output = einsum_layer([routing_logits, expert_outputs])
     #END MOE LAYER
 
     # Add ImportanceRegularizationLayer to the model
@@ -131,7 +149,9 @@ def build_soft_biLSTM_moe_model(X_train, batch_size, horizon, lstm_units, num_ex
     experts = [build_expert_network(expert_units=expert_units)(x) for _ in range(num_experts)]
     expert_outputs = tf.stack(experts, axis=1)
     #Add and Multiply expert models with router probability
-    moe_output = tf.einsum('bsn,bnse->bse', routing_logits, expert_outputs)
+    # Einsum Layer in extra class to enable serialization
+    einsum_layer = EinsumLayer('bsn,bnse->bse')
+    moe_output = einsum_layer([routing_logits, expert_outputs])
     #END MOE LAYER
 
     # Add ImportanceRegularizationLayer to the model
@@ -157,18 +177,24 @@ def build_topk_dense_moe_model(X_train, batch_size, horizon, dense_units, num_ex
 
     router_inputs = x
     router_probs = layers.Dense(num_experts, activation='softmax')(router_inputs)
-    expert_gate, expert_index = tf.math.top_k(router_probs, k=top_k)
+
+    # Use custom TopKLayer
+    top_k_layer = TopKLayer(top_k)
+    expert_gate, expert_index = top_k_layer(router_probs)
+        
     expert_idx_mask = tf.one_hot(expert_index, depth=num_experts)
     
-    combined_tensor = layers.Lambda(lambda x: tf.einsum('abc,abcd->abd', x[0], x[1]))([expert_gate, expert_idx_mask])
-    expert_inputs = layers.Lambda(lambda x: tf.einsum("abc,abd->dabc", x[0], x[1]))([router_inputs, combined_tensor])
+    # Use EinsumLayer for einsum operations
+    combined_tensor = EinsumLayer('abc,abcd->abd')([expert_gate, expert_idx_mask])
+    expert_inputs = EinsumLayer('abc,abd->dabc')([router_inputs, combined_tensor])
+
     expert_input_list = tf.unstack(expert_inputs, axis=0)
     expert_output_list = [
             [build_expert_network(expert_units=expert_units) for _ in range(num_experts)][idx](expert_input)
             for idx, expert_input in enumerate(expert_input_list)
         ]
     expert_outputs = tf.stack(expert_output_list, axis=1)
-    expert_outputs_combined = layers.Lambda(lambda x: tf.einsum("abcd,ace->acd", x[0], x[1]))([expert_outputs, combined_tensor])
+    expert_outputs_combined = EinsumLayer('abcd,ace->acd')([expert_outputs, combined_tensor])
     moe_output = expert_outputs_combined
 
     # Add ImportanceRegularizationLayer
@@ -190,24 +216,30 @@ def build_topk_dense_moe_model(X_train, batch_size, horizon, dense_units, num_ex
 
 #Builds a MoE model with top_k gating
 def build_topk_bilstm_moe_model(X_train, batch_size, horizon, lstm_units, num_experts, top_k, expert_units, metrics):
-     #Input of shape (batch_size, sequence_length, features)
+    #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
     x = inputs
 
     router_inputs = x
     router_probs = layers.Dense(num_experts, activation='softmax')(router_inputs)
-    expert_gate, expert_index = tf.math.top_k(router_probs, k=top_k)
+
+    # Use custom TopKLayer
+    top_k_layer = TopKLayer(top_k)
+    expert_gate, expert_index = top_k_layer(router_probs)
+        
     expert_idx_mask = tf.one_hot(expert_index, depth=num_experts)
     
-    combined_tensor = layers.Lambda(lambda x: tf.einsum('abc,abcd->abd', x[0], x[1]))([expert_gate, expert_idx_mask])
-    expert_inputs = layers.Lambda(lambda x: tf.einsum("abc,abd->dabc", x[0], x[1]))([router_inputs, combined_tensor])
+    # Use EinsumLayer for einsum operations
+    combined_tensor = EinsumLayer('abc,abcd->abd')([expert_gate, expert_idx_mask])
+    expert_inputs = EinsumLayer('abc,abd->dabc')([router_inputs, combined_tensor])
+    
     expert_input_list = tf.unstack(expert_inputs, axis=0)
     expert_output_list = [
             [build_expert_network(expert_units=expert_units) for _ in range(num_experts)][idx](expert_input)
             for idx, expert_input in enumerate(expert_input_list)
         ]
     expert_outputs = tf.stack(expert_output_list, axis=1)
-    expert_outputs_combined = layers.Lambda(lambda x: tf.einsum("abcd,ace->acd", x[0], x[1]))([expert_outputs, combined_tensor])
+    expert_outputs_combined = EinsumLayer('abcd,ace->acd')([expert_outputs, combined_tensor])
     moe_output = expert_outputs_combined
 
     # Add ImportanceRegularizationLayer

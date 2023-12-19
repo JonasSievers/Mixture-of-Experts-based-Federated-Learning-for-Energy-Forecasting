@@ -51,31 +51,45 @@ def run_federated_benchmark_model(
     transformer_dense_units = "",
     sequence_length = "",
     transformer_num_features = "",
-    transformer_num_heads = ""
+    transformer_num_heads = "",
+    soft_lstm_units = "", 
+    soft_lstm_num_experts = "",
+    soft_lstm_expert_units = "",
+    topk_lstm_units = "", 
+    topk_lstm_num_experts = "",
+    topk_bilstm = "",
+    topk_lstm_expert_units = "",
+    soft_dense_units = "", 
+    soft_dense_expert_units = "",
+    soft_dense_num_experts = "",
+    topk_dense_units = "", 
+    topk_dense_num_experts = "",
+    topk_dense = "",
+    topk_dense_expert_units = "",
 ):
     # Create global models for each cluser (10)
     for cluster in range(num_clusters):
 
         #Build and save global model
-        if 'lstm' in wb_model_name.lower():
+        if 'lstm' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
             global_model = build_bilstm_model(
-                X_train[f'user{user_index}'], 
+                X_train[f'user{1}'], 
                 horizon, 
                 num_layers=layers, 
                 units=lstm_units, 
                 batch_size=batch_size)
-        elif 'cnn' in wb_model_name.lower():
+        elif 'cnn' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
             global_model = build_cnn_model(
-                X_train[f'user{user_index}'], 
+                X_train[f'user{1}'], 
                 horizon, 
                 num_layers=layers,
                 filter=cnn_filter,
                 kernel_size=cnn_kernel_size, 
                 dense_units=cnn_dense_units, 
                 batch_size=batch_size)
-        elif 'tran' in wb_model_name.lower():
+        elif 'tran' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
             global_model = build_transformer_model(
-                X_train[f'user{user_index}'], 
+                X_train[f'user{1}'], 
                 horizon, 
                 batch_size=batch_size,
                 sequence_length=sequence_length,
@@ -84,6 +98,49 @@ def run_federated_benchmark_model(
                 num_heads=transformer_num_heads,
                 dense_units=transformer_dense_units, 
                 )
+        elif 'soft_bilstm' in wb_model_name.lower():
+            global_model = build_soft_biLSTM_moe_model(
+                X_train[f'user{1}'],  
+                batch_size=batch_size,
+                horizon = horizon,
+                lstm_units=soft_lstm_units, 
+                num_experts=soft_lstm_num_experts,
+                expert_units=soft_lstm_expert_units,
+                metrics=metrics
+                )
+        elif 'topk_bilstm' in wb_model_name.lower():
+            global_model = build_topk_bilstm_moe_model(
+                X_train[f'user{1}'],  
+                batch_size=batch_size,
+                horizon = horizon,
+                lstm_units=topk_lstm_units, 
+                num_experts=topk_lstm_num_experts,
+                top_k = topk_bilstm,
+                expert_units=topk_lstm_expert_units,
+                metrics=metrics
+                )
+        elif 'soft_dense' in wb_model_name.lower():
+            global_model = build_soft_dense_moe_model(
+                X_train[f'user{1}'],  
+                batch_size=batch_size,
+                horizon = horizon,
+                dense_units=soft_dense_units, 
+                expert_units=soft_dense_expert_units,
+                num_experts=soft_dense_num_experts,
+                metrics=metrics
+                )
+        elif 'topk_dense' in wb_model_name.lower():
+            global_model = build_topk_dense_moe_model(
+                X_train[f'user{1}'],  
+                batch_size=batch_size,
+                horizon = horizon,
+                dense_units=topk_dense_units, 
+                num_experts=topk_dense_num_experts,
+                top_k = topk_dense,
+                expert_units=topk_dense_expert_units,
+                metrics=metrics
+                )
+
         global_model.save(f'{save_path}/wandb/{wb_project}_{wb_model_name}_c{cluster}_FLround{0}.keras')
 
     for federated_round  in range(federated_rounds):
@@ -92,7 +149,12 @@ def run_federated_benchmark_model(
             print(f"Cluster {cluster_number}:")
 
             #Get global models weights
-            global_model = tf.keras.models.load_model(f'{save_path}/wandb/{wb_project}_{wb_model_name}_c{cluster_number}.keras', compile=False)
+            custom_objects = {
+                'EinsumLayer': EinsumLayer,
+                'TopKLayer': TopKLayer,
+                'ImportanceRegularizationLayer': ImportanceRegularizationLayer
+                }
+            global_model = tf.keras.models.load_model(f'{save_path}/wandb/{wb_project}_{wb_model_name}_c{cluster_number}_FLround{federated_round}.keras', custom_objects=custom_objects, compile=False)
             global_model_weights = global_model.get_weights()
 
             #initial list for local model weights
@@ -115,14 +177,14 @@ def run_federated_benchmark_model(
                 })
 
                 #build and compile local model X_train, batch_size, horizon, dense_units,  expert_units, num_experts, m1
-                if 'lstm' in wb_model_name.lower():
+                if 'lstm' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
                     local_model = build_bilstm_model(
                         X_train[f'user{user_index}'], 
                         horizon, 
                         num_layers=layers, 
                         units=lstm_units, 
                         batch_size=batch_size)
-                elif 'cnn' in wb_model_name.lower():
+                elif 'cnn' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
                     local_model = build_cnn_model(
                         X_train[f'user{user_index}'], 
                         horizon, 
@@ -131,7 +193,7 @@ def run_federated_benchmark_model(
                         kernel_size=cnn_kernel_size, 
                         dense_units=cnn_dense_units, 
                         batch_size=batch_size)
-                elif 'tran' in wb_model_name.lower():
+                elif 'tran' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
                     local_model = build_transformer_model(
                         X_train[f'user{user_index}'], 
                         horizon, 
@@ -141,6 +203,48 @@ def run_federated_benchmark_model(
                         num_features = transformer_num_features,
                         num_heads=transformer_num_heads,
                         dense_units=transformer_dense_units, 
+                        )
+                elif 'soft_bilstm' in wb_model_name.lower():
+                    local_model = build_soft_biLSTM_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        lstm_units=soft_lstm_units, 
+                        num_experts=soft_lstm_num_experts,
+                        expert_units=soft_lstm_expert_units,
+                        metrics=metrics
+                        )
+                elif 'topk_bilstm' in wb_model_name.lower():
+                    local_model = build_topk_bilstm_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        lstm_units=topk_lstm_units, 
+                        num_experts=topk_lstm_num_experts,
+                        top_k = topk_bilstm,
+                        expert_units=topk_lstm_expert_units,
+                        metrics=metrics
+                        )
+                elif 'soft_dense' in wb_model_name.lower():
+                    local_model = build_soft_dense_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        dense_units=soft_dense_units, 
+                        expert_units=soft_dense_expert_units,
+                        num_experts=soft_dense_num_experts,
+                        metrics=metrics
+                        )
+                elif 'topk_dense' in wb_model_name.lower():
+                    local_model = build_topk_dense_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        dense_units=topk_dense_units, 
+                        num_experts=topk_dense_num_experts,
+                        top_k = topk_dense,
+                        expert_units=topk_dense_expert_units,
+                        metrics=metrics
                         )
                 local_model.compile(loss=loss, optimizer=tf.keras.optimizers.Adam(learning_rate=0.0006), metrics=metrics)
 
@@ -200,6 +304,7 @@ def evaluate_federated_benchmark_model(
     df_array,
     results,
     all_results,
+    wb_project_name = "",
     layers = "",
     lstm_units = "",
     cnn_filter = "",
@@ -208,7 +313,21 @@ def evaluate_federated_benchmark_model(
     transformer_dense_units = "",
     sequence_length = "",
     transformer_num_features = "",
-    transformer_num_heads = ""
+    transformer_num_heads = "",
+    soft_lstm_units = "", 
+    soft_lstm_num_experts = "",
+    soft_lstm_expert_units = "",
+    topk_lstm_units = "", 
+    topk_lstm_num_experts = "",
+    topk_bilstm = "",
+    topk_lstm_expert_units = "",
+    soft_dense_units = "", 
+    soft_dense_expert_units = "",
+    soft_dense_num_experts = "",
+    topk_dense_units = "", 
+    topk_dense_num_experts = "",
+    topk_dense = "",
+    topk_dense_expert_units = "",
 ):
     
     for cluster_number, users_in_cluster in cluster_users.items():
@@ -216,16 +335,21 @@ def evaluate_federated_benchmark_model(
         for user_index in users_in_cluster:
             print("User: ", user_index)
             for round in range(num_rounds):
-                global_model = tf.keras.models.load_model(f"{save_path}/wandb/{wb_project}_{wb_model_name}_c{cluster_number}_FLround{federated_rounds}.keras", compile=False)
+                custom_objects = {
+                'EinsumLayer': EinsumLayer,
+                'TopKLayer': TopKLayer,
+                'ImportanceRegularizationLayer': ImportanceRegularizationLayer
+                }
+                global_model = tf.keras.models.load_model(f"{save_path}/wandb/{wb_project}_{wb_model_name}_c{cluster_number}_FLround{federated_rounds}.keras", custom_objects=custom_objects, compile=False)
                 
-                if 'lstm' in wb_model_name.lower():
+                if 'lstm' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
                     local_model = build_bilstm_model(
                         X_train[f'user{user_index}'], 
                         horizon, 
                         num_layers=layers, 
                         units=lstm_units, 
                         batch_size=batch_size)
-                elif 'cnn' in wb_model_name.lower():
+                elif 'cnn' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
                     local_model = build_cnn_model(
                         X_train[f'user{user_index}'], 
                         horizon, 
@@ -234,7 +358,7 @@ def evaluate_federated_benchmark_model(
                         kernel_size=cnn_kernel_size, 
                         dense_units=cnn_dense_units, 
                         batch_size=batch_size)
-                elif 'tran' in wb_model_name.lower():
+                elif 'tran' in wb_model_name.lower() and not ('soft' in wb_model_name.lower() or 'topk' in wb_model_name.lower()):
                     local_model = build_transformer_model(
                         X_train[f'user{user_index}'], 
                         horizon, 
@@ -245,7 +369,60 @@ def evaluate_federated_benchmark_model(
                         num_heads=transformer_num_heads,
                         dense_units=transformer_dense_units, 
                         )
+                elif 'soft_bilstm' in wb_model_name.lower():
+                    local_model = build_soft_biLSTM_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        lstm_units=soft_lstm_units, 
+                        num_experts=soft_lstm_num_experts,
+                        expert_units=soft_lstm_expert_units,
+                        metrics=metrics
+                        )
+                elif 'topk_bilstm' in wb_model_name.lower():
+                    local_model = build_topk_bilstm_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        lstm_units=topk_lstm_units, 
+                        num_experts=topk_lstm_num_experts,
+                        top_k = topk_bilstm,
+                        expert_units=topk_lstm_expert_units,
+                        metrics=metrics
+                        )
+                elif 'soft_dense' in wb_model_name.lower():
+                    local_model = build_soft_dense_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        dense_units=soft_dense_units, 
+                        expert_units=soft_dense_expert_units,
+                        num_experts=soft_dense_num_experts,
+                        metrics=metrics
+                        )
+                elif 'topk_dense' in wb_model_name.lower():
+                    local_model = build_topk_dense_moe_model(
+                        X_train[f'user{1}'],  
+                        batch_size=batch_size,
+                        horizon = horizon,
+                        dense_units=topk_dense_units, 
+                        num_experts=topk_dense_num_experts,
+                        top_k = topk_dense,
+                        expert_units=topk_dense_expert_units,
+                        metrics=metrics
+                        )
                 
+                # Initialize wandb
+                wandb.init(project=wb_project_name, 
+                    name=f'{wb_model_name}_u{user_index}_FLrd{3}_rd{round}',
+                    config={
+                    'max_epochs': 1,
+                    'batch_size': batch_size,
+                    'optimizer': "Adam",
+                    'learning_rate': 0.001,
+                    'architecture': wb_model_name,
+                })
+
                 local_model.set_weights(global_model.get_weights())
                 histroy, user_results = compile_fit_evaluate_model(
                     model=local_model, 
@@ -266,6 +443,7 @@ def evaluate_federated_benchmark_model(
                 )
                 # Add the 'architecture' column from dense_user_results to dense_results
                 all_results = pd.merge(all_results, user_results, how='outer')            
+                wandb.finish()
 
     for idx in range(len(df_array)):
         new_row = {

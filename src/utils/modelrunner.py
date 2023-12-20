@@ -24,7 +24,7 @@ def run_bilstm_model(
     callbacks,
     results,
     all_results,
-    num_rounds=2
+    num_rounds=5
 ):
     #For each of the users
     for idx in range(len(df_array)):
@@ -114,7 +114,7 @@ def run_cnn_model(
     callbacks,
     results,
     all_results,
-    num_rounds=2
+    num_rounds=5
 ):
     #For each of the users
     for idx in range(len(df_array)):
@@ -206,7 +206,7 @@ def run_transformer_model(
     callbacks,
     results,
     all_results,
-    num_rounds=2
+    num_rounds=5
 ): 
     #For each of the users
     for idx in range(len(df_array)):
@@ -296,7 +296,7 @@ def run_soft_dense_moe_model (
     callbacks,
     results,
     all_results,
-    num_rounds=2
+    num_rounds=5
 ):
     wandb_project_name = wb_project_name
     wandb_model_name = wb_model_name
@@ -390,7 +390,7 @@ def run_topk_dense_moe_model(
     callbacks,
     results,
     all_results,
-    num_rounds=2
+    num_rounds=5
 ):
     wandb_project_name = wb_project_name
     wandb_model_name = wb_model_name
@@ -484,7 +484,7 @@ def run_soft_lstm_moe_model(
         callbacks,
         results,
         all_results,
-        num_rounds=2
+        num_rounds=5
 ):
     wandb_project_name = wb_project_name 
     wandb_model_name = wb_model_name 
@@ -579,7 +579,7 @@ def run_topk_lstm_moe_model(
         callbacks,
         results,
         all_results,
-        num_rounds=2
+        num_rounds=5
 ):
 
     wandb_project_name = wb_project_name

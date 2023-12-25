@@ -1,0 +1,615 @@
+2023-12-24 19:04:54,988 INFO    StreamThr :30812 [internal.py:wandb_internal():86] W&B internal server running at pid: 30812, started at: 2023-12-24 19:04:54.988972
+2023-12-24 19:04:54,989 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status
+2023-12-24 19:04:54,990 INFO    WriterThread:30812 [datastore.py:open_for_write():85] open: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\run-f2hsmeam.wandb
+2023-12-24 19:04:54,991 DEBUG   SenderThread:30812 [sender.py:send():382] send: header
+2023-12-24 19:04:54,992 DEBUG   SenderThread:30812 [sender.py:send():382] send: run
+2023-12-24 19:04:55,541 INFO    SenderThread:30812 [dir_watcher.py:__init__():211] watching files in: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files
+2023-12-24 19:04:55,541 INFO    SenderThread:30812 [sender.py:_start_run_threads():1136] run started: f2hsmeam with start time 1703441094.004741
+2023-12-24 19:04:55,552 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: check_version
+2023-12-24 19:04:55,552 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: check_version
+2023-12-24 19:04:55,873 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: run_start
+2023-12-24 19:04:55,879 DEBUG   HandlerThread:30812 [system_info.py:__init__():32] System info init
+2023-12-24 19:04:55,879 DEBUG   HandlerThread:30812 [system_info.py:__init__():47] System info init done
+2023-12-24 19:04:55,879 INFO    HandlerThread:30812 [system_monitor.py:start():194] Starting system monitor
+2023-12-24 19:04:55,880 INFO    SystemMonitor:30812 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-24 19:04:55,880 INFO    HandlerThread:30812 [system_monitor.py:probe():214] Collecting system info
+2023-12-24 19:04:55,884 INFO    SystemMonitor:30812 [interfaces.py:start():190] Started cpu monitoring
+2023-12-24 19:04:55,884 INFO    SystemMonitor:30812 [interfaces.py:start():190] Started disk monitoring
+2023-12-24 19:04:55,887 DEBUG   HandlerThread:30812 [system_info.py:probe():196] Probing system
+2023-12-24 19:04:55,887 INFO    SystemMonitor:30812 [interfaces.py:start():190] Started gpu monitoring
+2023-12-24 19:04:55,891 INFO    SystemMonitor:30812 [interfaces.py:start():190] Started memory monitoring
+2023-12-24 19:04:55,897 INFO    SystemMonitor:30812 [interfaces.py:start():190] Started network monitoring
+2023-12-24 19:04:55,899 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:04:55,899 DEBUG   HandlerThread:30812 [system_info.py:_probe_git():181] Probing git
+2023-12-24 19:04:55,899 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:04:55,988 DEBUG   HandlerThread:30812 [system_info.py:_probe_git():189] Probing git done
+2023-12-24 19:04:55,988 DEBUG   HandlerThread:30812 [system_info.py:probe():244] Probing system done
+2023-12-24 19:04:55,988 DEBUG   HandlerThread:30812 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.6', 'heartbeatAt': '2023-12-24T18:04:55.887714', 'startedAt': '2023-12-24T18:04:53.989733', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/JonasSievers/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting.git', 'commit': '327835200320aea231350beb125f5461c2a896b8'}, 'email': None, 'root': 'C:/Users/rs1044/Documents/GitHub/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting', 'host': 'IPEBLANK-PC4', 'username': 'rs1044', 'executable': 'c:\\Users\\rs1044\\Documents\\GitHub\\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\\.venv\\Scripts\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3701.0, 'min': 0.0, 'max': 3701.0}, 'cpu_freq_per_core': [{'current': 3701.0, 'min': 0.0, 'max': 3701.0}], 'disk': {'/': {'total': 462.7943344116211, 'used': 363.6436958312988}}, 'gpu': 'NVIDIA GeForce GT 1030', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GT 1030', 'memory_total': 2147483648}], 'memory': {'total': 63.91091537475586}}
+2023-12-24 19:04:55,988 INFO    HandlerThread:30812 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-24 19:04:55,989 INFO    HandlerThread:30812 [system_monitor.py:probe():227] Publishing system info
+2023-12-24 19:04:55,989 DEBUG   HandlerThread:30812 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-24 19:04:55,989 DEBUG   HandlerThread:30812 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-24 19:04:55,990 INFO    HandlerThread:30812 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-24 19:04:55,990 DEBUG   SenderThread:30812 [sender.py:send():382] send: files
+2023-12-24 19:04:55,990 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-24 19:04:55,991 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-24 19:04:55,992 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: stop_status
+2023-12-24 19:04:55,993 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-24 19:04:56,097 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-24 19:04:56,132 DEBUG   SenderThread:30812 [sender.py:send():382] send: telemetry
+2023-12-24 19:04:56,132 DEBUG   SenderThread:30812 [sender.py:send():382] send: telemetry
+2023-12-24 19:04:56,132 DEBUG   SenderThread:30812 [sender.py:send():382] send: telemetry
+2023-12-24 19:04:56,132 DEBUG   SenderThread:30812 [sender.py:send():382] send: files
+2023-12-24 19:04:56,132 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file model-best.h5 with policy live
+2023-12-24 19:04:56,542 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-metadata.json
+2023-12-24 19:04:56,542 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\requirements.txt
+2023-12-24 19:04:56,952 INFO    wandb-upload_0:30812 [upload_job.py:push():131] Uploaded file C:\Users\rs1044\AppData\Local\Temp\tmpea3pdr4nwandb\e3vng92d-wandb-metadata.json
+2023-12-24 19:04:57,780 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:57,780 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:57,781 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:04:57,781 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:57,784 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:57,784 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:57,785 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:57,785 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:57,785 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:57,918 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:04:57,918 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:04:58,506 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:58,506 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:58,507 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:04:58,507 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:58,508 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:58,508 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:58,509 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:58,509 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:58,510 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:58,563 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:04:59,233 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:59,234 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:59,234 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:04:59,234 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:59,235 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:59,235 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:59,236 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:59,236 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:59,237 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:04:59,577 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:04:59,941 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:04:59,941 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:04:59,967 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:59,967 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:04:59,968 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:04:59,968 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:04:59,969 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:00,591 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:00,694 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:00,695 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:00,695 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:00,695 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:00,695 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:00,696 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:00,697 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:00,697 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:00,697 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:00,698 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:01,420 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:01,420 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:01,421 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:01,421 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:01,422 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:01,599 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:01,964 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:01,965 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:02,153 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:02,153 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:02,153 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:02,154 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:02,155 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:02,611 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:02,873 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:02,874 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:02,874 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:02,874 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:02,875 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:03,597 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:03,597 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:03,598 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:03,598 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:03,599 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:03,599 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:03,600 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:03,600 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:03,601 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:03,625 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:03,982 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:03,982 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:04,327 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:04,327 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:04,328 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:04,328 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:04,329 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:04,627 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:05,054 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:05,054 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:05,054 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:05,055 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:05,055 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:05,633 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:05,782 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:05,782 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:05,782 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:05,782 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:05,782 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:05,783 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:05,991 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:05,991 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:06,515 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:06,515 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:06,515 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:06,515 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:06,517 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:06,634 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:07,242 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:07,242 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:07,243 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:07,243 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:07,243 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:07,644 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:07,978 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:07,978 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:07,979 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:07,979 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:07,980 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:08,008 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:08,009 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:08,652 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:08,709 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:08,709 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:08,709 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:08,709 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:08,711 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:09,434 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:09,434 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:09,434 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:09,434 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:09,435 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:09,436 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:09,436 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:09,436 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:09,437 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:09,657 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:10,022 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:10,022 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:10,175 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:10,175 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:10,176 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:10,176 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:10,177 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:10,177 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:10,178 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:10,178 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:10,179 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:10,669 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:10,904 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:10,904 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:10,904 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:10,905 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:10,905 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:10,906 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:11,000 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-24 19:05:11,001 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-24 19:05:11,001 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: stop_status
+2023-12-24 19:05:11,636 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:11,636 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:11,637 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:11,637 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:11,638 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:11,674 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:12,034 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:12,034 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:12,374 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:12,375 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:12,375 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:12,375 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:12,376 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:12,376 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:12,377 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:12,377 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:12,378 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:12,674 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:13,107 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:13,108 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:13,108 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:13,108 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:13,110 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:13,110 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:13,111 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:13,111 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:13,112 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:13,681 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:13,844 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:13,844 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:13,845 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:13,845 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:13,846 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:14,045 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:14,045 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:14,584 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:14,585 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:14,585 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:14,585 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:14,586 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:14,587 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:14,587 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:14,588 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:14,588 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:14,688 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:15,315 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:15,315 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:15,316 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:15,316 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:15,318 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:15,318 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:15,318 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:15,319 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:15,319 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:15,691 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:16,055 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:16,056 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:16,059 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:16,059 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:16,060 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:16,060 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:16,060 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:16,061 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:16,692 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:16,789 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:16,789 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:16,790 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:16,790 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:16,791 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:17,522 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:17,522 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:17,523 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:17,523 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:17,524 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:17,525 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:17,525 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:17,526 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:17,526 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:17,693 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:18,074 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:18,079 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:18,266 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:18,266 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:18,266 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:18,267 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:18,267 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:18,699 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:18,997 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:18,997 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:18,998 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:18,998 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:18,999 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:19,714 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:19,730 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:19,730 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:19,730 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:19,731 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:19,732 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:20,091 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:20,091 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:20,467 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:20,467 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:20,467 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:20,468 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:20,468 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:20,720 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:21,197 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:21,197 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:21,198 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:21,198 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:21,198 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:21,199 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:21,724 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:21,935 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:21,935 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:21,935 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:21,935 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:21,937 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:22,104 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:22,105 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:22,669 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:22,669 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:22,669 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:22,669 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:22,670 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:22,736 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:23,394 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:23,394 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:23,395 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:23,395 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:23,396 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:23,396 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:23,397 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:23,397 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:23,398 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:23,737 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:24,122 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:24,123 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:24,131 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:24,131 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:24,132 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:24,132 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:24,133 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:24,747 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:24,863 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:24,863 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:24,864 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:24,864 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:24,865 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:24,865 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:24,866 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:24,866 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:24,867 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:25,594 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:25,594 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:25,595 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:25,595 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:25,596 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:25,757 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:26,006 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-24 19:05:26,007 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-24 19:05:26,007 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: stop_status
+2023-12-24 19:05:26,155 ERROR   gpu       :30812 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-24 19:05:26,158 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:26,158 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:26,245 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:26,340 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:26,340 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:26,400 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:26,400 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:26,401 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:26,759 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:26,759 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\config.yaml
+2023-12-24 19:05:27,074 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:27,075 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:27,075 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:27,075 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:27,076 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:27,760 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:27,805 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:27,805 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:27,806 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:27,806 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:27,807 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:27,807 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:27,808 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:27,808 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:27,809 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:28,169 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:28,169 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:28,543 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:28,543 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:28,543 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:28,544 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:28,545 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:28,766 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:29,273 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:29,273 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:29,273 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:29,274 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:29,274 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:29,768 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:30,010 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:30,010 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:30,011 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:30,011 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:30,012 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:30,012 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:30,013 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:30,013 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:30,014 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:30,180 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:30,180 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:30,748 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:30,748 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:30,749 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:30,749 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:30,750 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:30,773 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:31,478 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:31,478 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:31,478 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:31,478 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:31,478 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:31,479 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:31,778 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:32,187 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:32,187 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:32,217 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:32,217 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:32,218 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:32,218 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:32,219 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:32,779 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:32,947 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:32,948 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:32,948 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:32,948 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:32,949 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:33,676 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:33,677 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:33,677 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:33,677 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:33,678 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:33,783 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:34,190 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:34,191 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:34,418 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:34,418 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:34,419 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:34,419 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:34,420 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:34,787 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:35,145 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:35,145 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:35,145 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:35,146 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:35,147 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:35,796 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:35,879 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:35,879 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:35,880 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:35,880 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:35,881 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:36,206 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:36,206 ERROR   gpu       :30812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-24 19:05:36,616 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:36,616 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:36,616 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:36,617 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:36,617 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:36,617 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:36,798 INFO    Thread-1949:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:37,343 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:37,343 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:37,344 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:37,344 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:37,345 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:37,435 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-24 19:05:37,436 DEBUG   SenderThread:30812 [sender.py:send():382] send: history
+2023-12-24 19:05:37,436 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: summary_record
+2023-12-24 19:05:37,437 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:37,484 DEBUG   SenderThread:30812 [sender.py:send():382] send: telemetry
+2023-12-24 19:05:37,485 DEBUG   SenderThread:30812 [sender.py:send():382] send: exit
+2023-12-24 19:05:37,485 INFO    SenderThread:30812 [sender.py:send_exit():589] handling exit code: 0
+2023-12-24 19:05:37,485 INFO    SenderThread:30812 [sender.py:send_exit():591] handling runtime: 41
+2023-12-24 19:05:37,486 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:37,486 INFO    SenderThread:30812 [sender.py:send_exit():597] send defer
+2023-12-24 19:05:37,486 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,486 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-24 19:05:37,486 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,486 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-24 19:05:37,486 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 1
+2023-12-24 19:05:37,486 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,487 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-24 19:05:37,487 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,487 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-24 19:05:37,487 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 2
+2023-12-24 19:05:37,487 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,487 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-24 19:05:37,487 INFO    HandlerThread:30812 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-24 19:05:37,493 DEBUG   SystemMonitor:30812 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-24 19:05:37,493 DEBUG   SystemMonitor:30812 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-24 19:05:37,493 INFO    HandlerThread:30812 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-24 19:05:37,494 DEBUG   SystemMonitor:30812 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-24 19:05:37,494 INFO    HandlerThread:30812 [interfaces.py:finish():202] Joined disk monitor
+2023-12-24 19:05:37,514 ERROR   gpu       :30812 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-24 19:05:37,514 INFO    HandlerThread:30812 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-24 19:05:37,514 INFO    HandlerThread:30812 [interfaces.py:finish():202] Joined memory monitor
+2023-12-24 19:05:37,514 INFO    HandlerThread:30812 [interfaces.py:finish():202] Joined network monitor
+2023-12-24 19:05:37,515 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,515 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-24 19:05:37,515 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 3
+2023-12-24 19:05:37,515 DEBUG   SenderThread:30812 [sender.py:send():382] send: stats
+2023-12-24 19:05:37,515 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,515 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-24 19:05:37,515 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,515 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-24 19:05:37,515 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 4
+2023-12-24 19:05:37,516 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,516 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-24 19:05:37,516 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,516 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-24 19:05:37,516 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 5
+2023-12-24 19:05:37,516 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,516 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-24 19:05:37,516 DEBUG   SenderThread:30812 [sender.py:send():382] send: summary
+2023-12-24 19:05:37,517 INFO    SenderThread:30812 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-24 19:05:37,517 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,517 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-24 19:05:37,517 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 6
+2023-12-24 19:05:37,517 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,517 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-24 19:05:37,518 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,518 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-24 19:05:37,519 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: status_report
+2023-12-24 19:05:37,689 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 7
+2023-12-24 19:05:37,689 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,689 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-24 19:05:37,689 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,689 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-24 19:05:37,689 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 8
+2023-12-24 19:05:37,689 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,689 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-24 19:05:37,690 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,690 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-24 19:05:37,690 INFO    SenderThread:30812 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-24 19:05:37,690 INFO    SenderThread:30812 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-24 19:05:37,690 INFO    SenderThread:30812 [job_builder.py:_get_program_relpath():446] run is notebook based run
+2023-12-24 19:05:37,690 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 9
+2023-12-24 19:05:37,690 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,690 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-24 19:05:37,691 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,691 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-24 19:05:37,691 INFO    SenderThread:30812 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-24 19:05:37,801 INFO    SenderThread:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:37,801 INFO    SenderThread:30812 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\config.yaml
+2023-12-24 19:05:37,801 INFO    SenderThread:30812 [dir_watcher.py:finish():388] scan: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files
+2023-12-24 19:05:37,801 INFO    SenderThread:30812 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\config.yaml config.yaml
+2023-12-24 19:05:37,801 INFO    SenderThread:30812 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\requirements.txt requirements.txt
+2023-12-24 19:05:37,803 INFO    SenderThread:30812 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-metadata.json wandb-metadata.json
+2023-12-24 19:05:37,803 INFO    SenderThread:30812 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json wandb-summary.json
+2023-12-24 19:05:37,804 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 10
+2023-12-24 19:05:37,805 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:37,805 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-24 19:05:37,805 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:37,806 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-24 19:05:37,806 INFO    SenderThread:30812 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-24 19:05:38,133 INFO    wandb-upload_0:30812 [upload_job.py:push():131] Uploaded file c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\config.yaml
+2023-12-24 19:05:38,408 INFO    wandb-upload_1:30812 [upload_job.py:push():131] Uploaded file c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\requirements.txt
+2023-12-24 19:05:38,420 INFO    wandb-upload_2:30812 [upload_job.py:push():131] Uploaded file c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\files\wandb-summary.json
+2023-12-24 19:05:38,500 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-24 19:05:38,500 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: poll_exit
+2023-12-24 19:05:38,626 INFO    Thread-1948 (_thread_body):30812 [sender.py:transition_state():617] send defer: 11
+2023-12-24 19:05:38,626 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:38,626 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-24 19:05:38,626 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:38,626 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-24 19:05:38,626 INFO    SenderThread:30812 [file_pusher.py:join():181] waiting for file pusher
+2023-12-24 19:05:38,626 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 12
+2023-12-24 19:05:38,627 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:38,627 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-24 19:05:38,627 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:38,627 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-24 19:05:38,627 INFO    SenderThread:30812 [file_stream.py:finish():595] file stream finish called
+2023-12-24 19:05:39,066 INFO    SenderThread:30812 [file_stream.py:finish():599] file stream finish is done
+2023-12-24 19:05:39,066 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 13
+2023-12-24 19:05:39,066 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:39,067 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-24 19:05:39,067 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:39,067 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-24 19:05:39,067 INFO    SenderThread:30812 [sender.py:transition_state():617] send defer: 14
+2023-12-24 19:05:39,067 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: defer
+2023-12-24 19:05:39,067 INFO    HandlerThread:30812 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-24 19:05:39,067 DEBUG   SenderThread:30812 [sender.py:send():382] send: final
+2023-12-24 19:05:39,067 DEBUG   SenderThread:30812 [sender.py:send():382] send: footer
+2023-12-24 19:05:39,067 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: defer
+2023-12-24 19:05:39,067 INFO    SenderThread:30812 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-24 19:05:39,068 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-24 19:05:39,068 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: poll_exit
+2023-12-24 19:05:39,068 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-24 19:05:39,068 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: server_info
+2023-12-24 19:05:39,068 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-24 19:05:39,069 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-24 19:05:39,069 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: server_info
+2023-12-24 19:05:39,069 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: job_info
+2023-12-24 19:05:39,200 DEBUG   SenderThread:30812 [sender.py:send_request():409] send_request: job_info
+2023-12-24 19:05:39,201 DEBUG   HandlerThread:30812 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-24 19:05:39,201 INFO    HandlerThread:30812 [handler.py:finish():866] shutting down handler
+2023-12-24 19:05:40,078 INFO    WriterThread:30812 [datastore.py:close():294] close: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Locallearning\TS_LL_PV_Forecasting_Moe\wandb\run-20231224_190453-f2hsmeam\run-f2hsmeam.wandb
+2023-12-24 19:05:40,202 INFO    SenderThread:30812 [sender.py:finish():1548] shutting down sender
+2023-12-24 19:05:40,202 INFO    SenderThread:30812 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-24 19:05:40,202 INFO    SenderThread:30812 [file_pusher.py:join():181] waiting for file pusher

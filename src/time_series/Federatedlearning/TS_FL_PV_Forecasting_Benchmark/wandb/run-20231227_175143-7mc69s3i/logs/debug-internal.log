@@ -1,0 +1,788 @@
+2023-12-27 17:51:43,774 INFO    StreamThr :22664 [internal.py:wandb_internal():86] W&B internal server running at pid: 22664, started at: 2023-12-27 17:51:43.774103
+2023-12-27 17:51:43,774 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status
+2023-12-27 17:51:43,774 INFO    WriterThread:22664 [datastore.py:open_for_write():85] open: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\run-7mc69s3i.wandb
+2023-12-27 17:51:43,774 DEBUG   SenderThread:22664 [sender.py:send():382] send: header
+2023-12-27 17:51:43,788 DEBUG   SenderThread:22664 [sender.py:send():382] send: run
+2023-12-27 17:51:44,351 INFO    SenderThread:22664 [dir_watcher.py:__init__():211] watching files in: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files
+2023-12-27 17:51:44,351 INFO    SenderThread:22664 [sender.py:_start_run_threads():1136] run started: 7mc69s3i with start time 1703695903.117192
+2023-12-27 17:51:44,367 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: check_version
+2023-12-27 17:51:44,367 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: check_version
+2023-12-27 17:51:44,680 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: run_start
+2023-12-27 17:51:44,680 DEBUG   HandlerThread:22664 [system_info.py:__init__():32] System info init
+2023-12-27 17:51:44,680 DEBUG   HandlerThread:22664 [system_info.py:__init__():47] System info init done
+2023-12-27 17:51:44,680 INFO    HandlerThread:22664 [system_monitor.py:start():194] Starting system monitor
+2023-12-27 17:51:44,680 INFO    SystemMonitor:22664 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-27 17:51:44,680 INFO    HandlerThread:22664 [system_monitor.py:probe():214] Collecting system info
+2023-12-27 17:51:44,680 INFO    SystemMonitor:22664 [interfaces.py:start():190] Started cpu monitoring
+2023-12-27 17:51:44,680 INFO    SystemMonitor:22664 [interfaces.py:start():190] Started disk monitoring
+2023-12-27 17:51:44,695 DEBUG   HandlerThread:22664 [system_info.py:probe():196] Probing system
+2023-12-27 17:51:44,695 INFO    SystemMonitor:22664 [interfaces.py:start():190] Started gpu monitoring
+2023-12-27 17:51:44,695 INFO    SystemMonitor:22664 [interfaces.py:start():190] Started memory monitoring
+2023-12-27 17:51:44,695 INFO    SystemMonitor:22664 [interfaces.py:start():190] Started network monitoring
+2023-12-27 17:51:44,695 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:44,695 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:44,695 DEBUG   HandlerThread:22664 [system_info.py:_probe_git():181] Probing git
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [system_info.py:_probe_git():189] Probing git done
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [system_info.py:probe():244] Probing system done
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.11.6', 'heartbeatAt': '2023-12-27T16:51:44.695918', 'startedAt': '2023-12-27T16:51:43.096429', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/JonasSievers/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting.git', 'commit': 'bdaa15fe5569053d345a2532604f5829d9fb59f5'}, 'email': None, 'root': 'C:/Users/rs1044/Documents/GitHub/Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting', 'host': 'IPEBLANK-PC4', 'username': 'rs1044', 'executable': 'c:\\Users\\rs1044\\Documents\\GitHub\\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\\.venv\\Scripts\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3701.0, 'min': 0.0, 'max': 3701.0}, 'cpu_freq_per_core': [{'current': 3701.0, 'min': 0.0, 'max': 3701.0}], 'disk': {'/': {'total': 462.7943344116211, 'used': 365.06578063964844}}, 'gpu': 'NVIDIA GeForce GT 1030', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GT 1030', 'memory_total': 2147483648}], 'memory': {'total': 63.91091537475586}}
+2023-12-27 17:51:44,793 INFO    HandlerThread:22664 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-27 17:51:44,793 INFO    HandlerThread:22664 [system_monitor.py:probe():227] Publishing system info
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-27 17:51:44,793 INFO    HandlerThread:22664 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-27 17:51:44,793 DEBUG   SenderThread:22664 [sender.py:send():382] send: files
+2023-12-27 17:51:44,793 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:51:44,793 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:51:44,793 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:51:44,949 DEBUG   SenderThread:22664 [sender.py:send():382] send: telemetry
+2023-12-27 17:51:45,137 DEBUG   SenderThread:22664 [sender.py:send():382] send: telemetry
+2023-12-27 17:51:45,137 DEBUG   SenderThread:22664 [sender.py:send():382] send: telemetry
+2023-12-27 17:51:45,137 DEBUG   SenderThread:22664 [sender.py:send():382] send: files
+2023-12-27 17:51:45,137 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-27 17:51:45,137 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file model-best.h5 with policy live
+2023-12-27 17:51:45,371 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\requirements.txt
+2023-12-27 17:51:45,371 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-metadata.json
+2023-12-27 17:51:45,772 INFO    wandb-upload_0:22664 [upload_job.py:push():131] Uploaded file C:\Users\rs1044\AppData\Local\Temp\tmptqh9n9egwandb\5025ehc8-wandb-metadata.json
+2023-12-27 17:51:46,716 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:46,716 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:48,729 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:48,729 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:49,170 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:51:50,764 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:50,764 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:52,780 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:52,780 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:54,234 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:51:54,796 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:54,796 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:56,813 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:56,813 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:58,831 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:58,831 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:51:59,279 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:51:59,800 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:51:59,800 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:51:59,816 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:52:00,847 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:00,847 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:02,863 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:02,863 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:03,911 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:03,911 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:03,911 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:52:03,911 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:03,934 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:03,934 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:03,934 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:03,934 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:03,934 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:04,529 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:52:04,880 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:04,880 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:04,942 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:06,896 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:06,896 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:08,912 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:08,912 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:09,960 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:10,927 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:10,927 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:12,945 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:12,945 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:14,805 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:52:14,805 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:52:14,821 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:52:14,993 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:52:14,993 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:14,993 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:15,024 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:15,597 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\config.yaml
+2023-12-27 17:52:17,003 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:17,003 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:18,269 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:18,269 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:18,269 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:52:18,269 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:18,284 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:18,284 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:18,284 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:18,284 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:18,284 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:18,613 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:52:19,009 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:19,009 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:20,306 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:21,019 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:21,019 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:23,026 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:23,026 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:25,035 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:25,035 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:25,332 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:27,042 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:27,042 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:29,059 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:29,059 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:29,824 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:52:29,824 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:52:29,824 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:52:30,980 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:31,074 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:31,074 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:32,648 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:32,648 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:32,648 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:52:32,648 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:32,648 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:32,648 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:32,648 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:32,648 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:32,648 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:32,726 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:52:33,090 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:33,090 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:35,106 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:35,106 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:36,695 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:37,118 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:37,118 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:39,123 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:39,123 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:41,134 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:41,134 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:41,751 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:43,156 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:43,156 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:44,712 DEBUG   SystemMonitor:22664 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-27 17:52:44,712 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:52:44,839 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:52:44,839 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:52:44,839 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:52:45,183 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:52:45,183 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:45,183 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:47,073 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:47,073 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:52:47,089 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:52:47,089 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:47,089 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:47,089 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:47,089 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:47,089 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:47,089 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:52:47,089 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:52:47,199 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:47,199 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:47,866 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:52:49,205 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:49,205 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:51,215 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:51,215 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:52,128 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:53,232 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:53,232 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:55,239 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:55,239 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:57,163 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:52:57,241 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:57,241 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:59,249 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:59,249 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:52:59,849 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:52:59,849 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:52:59,849 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:53:01,272 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:01,272 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:01,428 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:01,428 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:01,428 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:53:01,428 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:01,428 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:01,938 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:53:02,448 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:03,282 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:03,282 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:05,300 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:05,300 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:07,310 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:07,310 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:07,499 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:09,332 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:09,332 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:11,354 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:11,354 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:12,557 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:13,370 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:13,370 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:14,724 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:53:14,855 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:53:14,855 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:53:14,855 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:53:15,402 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:53:15,402 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:15,402 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:15,771 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:15,771 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:15,771 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:53:15,771 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:15,771 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:15,771 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:15,771 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:15,771 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:15,771 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:16,011 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:53:17,428 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:17,428 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:17,803 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:19,436 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:19,436 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:21,445 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:21,445 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:22,826 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:23,463 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:23,463 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:25,477 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:25,477 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:27,484 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:27,484 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:27,827 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:29,495 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:29,495 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:29,859 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:53:29,859 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:53:29,859 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:53:30,093 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:30,109 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:30,110 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:53:30,110 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:30,110 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:30,110 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:30,110 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:30,110 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:30,110 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:31,125 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:53:31,501 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:31,501 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:33,136 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:33,511 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:33,511 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:35,518 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:35,518 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:37,523 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:37,523 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:38,169 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:39,534 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:39,534 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:41,560 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:41,560 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:43,202 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:43,578 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:43,578 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:44,358 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:44,358 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:44,358 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:53:44,358 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:44,358 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:44,358 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:44,358 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:44,358 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:44,358 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:44,734 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:53:44,865 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:53:44,865 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:53:44,865 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:53:45,220 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:53:45,604 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:53:45,604 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:45,604 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:47,617 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:47,617 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:49,131 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:49,624 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:49,624 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:51,641 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:51,641 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:53,658 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:53,658 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:54,163 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:55,675 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:55,675 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:57,681 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:57,681 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:58,676 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:58,676 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:53:58,676 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:53:58,676 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:58,676 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:58,676 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:58,676 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:58,676 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:53:58,676 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:53:59,331 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:53:59,691 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:53:59,691 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:59,691 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:53:59,868 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:53:59,884 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:53:59,884 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:54:01,697 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:01,697 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:03,707 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:03,707 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:05,089 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:05,714 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:05,714 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:07,719 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:07,719 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:09,732 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:09,732 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:10,131 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:11,756 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:11,756 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:13,013 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:13,013 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:13,013 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:54:13,013 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:13,013 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:13,013 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:13,013 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:13,013 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:13,013 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:13,461 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:54:13,774 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:13,774 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:14,742 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:54:14,873 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:54:14,904 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:54:14,904 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:54:15,805 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:54:15,805 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:15,805 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:16,046 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:17,843 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:17,843 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:19,859 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:19,859 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:21,073 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:21,876 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:21,876 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:23,895 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:23,895 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:25,911 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:25,911 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:26,099 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:27,349 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:27,349 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:27,349 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:54:27,349 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:27,349 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:27,349 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:27,349 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:27,349 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:27,349 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:27,568 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:54:27,927 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:27,927 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:29,881 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:54:29,928 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:54:29,928 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:54:29,943 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:29,943 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:31,960 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:31,960 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:32,085 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:33,976 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:33,976 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:35,986 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:35,986 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:37,097 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:37,993 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:37,993 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:40,002 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:40,002 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:41,691 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:41,691 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:41,691 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:54:41,691 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:41,691 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:42,010 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:42,010 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:42,698 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:54:42,723 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:44,027 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:44,027 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:44,757 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:54:44,886 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:54:44,933 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:54:44,933 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:54:46,058 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:54:46,074 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:46,074 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:48,090 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:48,090 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:48,106 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:50,106 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:50,106 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:52,123 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:52,123 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:53,139 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:54,139 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:54,139 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:56,014 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:56,014 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:54:56,014 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:54:56,014 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:54:56,014 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:54:56,155 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:56,155 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:56,790 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:54:58,171 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:58,171 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:54:59,032 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:54:59,891 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:54:59,953 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:54:59,953 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:55:00,188 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:00,188 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:02,204 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:02,204 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:04,126 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:04,220 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:04,220 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:06,231 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:06,231 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:08,237 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:08,237 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:09,144 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:10,247 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:10,247 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:10,263 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:10,263 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:10,263 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:55:10,263 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:55:10,278 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:55:10,863 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:55:12,254 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:12,254 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:14,263 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:14,263 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:14,326 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:14,764 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:55:14,895 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:55:14,957 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:55:14,957 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:55:16,285 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:55:16,301 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:16,301 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:18,311 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:18,311 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:20,225 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:20,319 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:20,319 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:22,328 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:22,328 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:24,336 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:24,336 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:24,571 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:24,571 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:24,571 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:55:24,571 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:55:24,571 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:55:24,914 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:55:25,580 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:26,341 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:26,341 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:28,362 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:28,362 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:29,900 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:55:29,978 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:55:29,978 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:55:30,370 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:30,370 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:31,213 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:32,385 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:32,385 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:34,402 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:34,402 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:36,256 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:36,412 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:36,412 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:38,428 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:38,428 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:38,872 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:38,872 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:38,872 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:55:38,872 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:55:38,872 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:55:38,935 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:55:40,444 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:40,444 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:41,904 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:42,452 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:42,452 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:44,462 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:44,462 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:44,774 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:55:44,905 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:55:44,999 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:55:44,999 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:55:46,483 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:55:46,483 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:46,499 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:47,188 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:48,502 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:48,502 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:50,516 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:50,516 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:52,235 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:52,527 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:52,527 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:53,189 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:53,189 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:55:53,189 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:55:53,189 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:55:53,189 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:55:54,001 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:55:54,532 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:54,532 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:56,542 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:56,542 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:58,237 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:55:58,559 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:58,559 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:55:59,909 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:56:00,003 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:56:00,003 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:56:00,575 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:00,575 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:02,583 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:02,583 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:04,223 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:04,593 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:04,593 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:06,609 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:06,609 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:07,469 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:07,469 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:07,469 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:56:07,469 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:56:07,469 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:08,099 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:56:08,624 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:08,624 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:09,491 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:10,642 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:10,642 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:12,648 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:12,648 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:14,534 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:14,659 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:14,659 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:14,784 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:56:14,914 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:56:15,008 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:56:15,008 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:56:16,711 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:56:16,711 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:16,711 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:18,723 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:18,723 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:20,259 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:20,729 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:20,729 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:21,755 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:21,755 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:21,755 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:56:21,755 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:56:21,755 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:22,167 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:56:22,740 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:22,740 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:24,746 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:24,746 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:25,803 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:26,766 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:26,766 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:28,790 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:28,790 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:29,919 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:56:30,029 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:56:30,029 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:56:30,804 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:30,804 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:31,263 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:32,811 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:32,811 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:34,822 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:34,822 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:36,000 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:36,000 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:36,000 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:56:36,000 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:56:36,000 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:36,235 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:56:36,828 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:36,828 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:37,016 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:38,842 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:38,842 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:40,859 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:40,859 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:42,037 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:42,881 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:42,881 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:44,799 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:56:44,899 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:44,899 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:44,930 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:56:45,039 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-27 17:56:45,039 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: stop_status
+2023-12-27 17:56:46,947 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:56:46,947 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:46,947 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:47,291 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:48,963 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:48,963 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:50,291 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:50,291 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:50,291 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:56:50,291 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:56:50,291 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:50,369 INFO    Thread-7605:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:56:50,979 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:50,979 ERROR   gpu       :22664 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-12-27 17:56:51,104 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-27 17:56:51,104 DEBUG   SenderThread:22664 [sender.py:send():382] send: history
+2023-12-27 17:56:51,104 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: summary_record
+2023-12-27 17:56:51,104 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:51,119 DEBUG   SenderThread:22664 [sender.py:send():382] send: telemetry
+2023-12-27 17:56:51,119 DEBUG   SenderThread:22664 [sender.py:send():382] send: exit
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:send_exit():589] handling exit code: 0
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:send_exit():591] handling runtime: 306
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:send_exit():597] send defer
+2023-12-27 17:56:51,119 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,119 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-27 17:56:51,119 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 1
+2023-12-27 17:56:51,119 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,119 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-27 17:56:51,119 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-27 17:56:51,119 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 2
+2023-12-27 17:56:51,119 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,119 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-27 17:56:51,119 INFO    HandlerThread:22664 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-27 17:56:51,119 DEBUG   SystemMonitor:22664 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-27 17:56:51,119 DEBUG   SystemMonitor:22664 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-27 17:56:51,119 INFO    HandlerThread:22664 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-27 17:56:51,119 INFO    HandlerThread:22664 [interfaces.py:finish():202] Joined disk monitor
+2023-12-27 17:56:51,135 ERROR   gpu       :22664 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-12-27 17:56:51,135 INFO    HandlerThread:22664 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-27 17:56:51,135 INFO    HandlerThread:22664 [interfaces.py:finish():202] Joined memory monitor
+2023-12-27 17:56:51,135 INFO    HandlerThread:22664 [interfaces.py:finish():202] Joined network monitor
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 3
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send():382] send: stats
+2023-12-27 17:56:51,151 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,151 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 4
+2023-12-27 17:56:51,151 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,151 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 5
+2023-12-27 17:56:51,151 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,151 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send():382] send: summary
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 6
+2023-12-27 17:56:51,151 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,151 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-27 17:56:51,151 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,151 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-27 17:56:51,151 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: status_report
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 7
+2023-12-27 17:56:51,323 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,323 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-27 17:56:51,323 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 8
+2023-12-27 17:56:51,323 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,323 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-27 17:56:51,323 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [job_builder.py:_get_program_relpath():446] run is notebook based run
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 9
+2023-12-27 17:56:51,323 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,323 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-27 17:56:51,323 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-27 17:56:51,323 INFO    SenderThread:22664 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\config.yaml
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:finish():388] scan: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\config.yaml config.yaml
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\requirements.txt requirements.txt
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-metadata.json wandb-metadata.json
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [dir_watcher.py:finish():402] scan save: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json wandb-summary.json
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 10
+2023-12-27 17:56:51,385 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:51,385 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-27 17:56:51,385 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-27 17:56:51,385 INFO    SenderThread:22664 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-27 17:56:52,026 INFO    wandb-upload_1:22664 [upload_job.py:push():131] Uploaded file c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\requirements.txt
+2023-12-27 17:56:52,026 INFO    wandb-upload_0:22664 [upload_job.py:push():131] Uploaded file c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\config.yaml
+2023-12-27 17:56:52,136 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-27 17:56:52,136 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: poll_exit
+2023-12-27 17:56:52,286 INFO    wandb-upload_2:22664 [upload_job.py:push():131] Uploaded file c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\files\wandb-summary.json
+2023-12-27 17:56:52,505 INFO    Thread-7604 (_thread_body):22664 [sender.py:transition_state():617] send defer: 11
+2023-12-27 17:56:52,505 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:52,505 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-27 17:56:52,505 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:52,505 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-27 17:56:52,505 INFO    SenderThread:22664 [file_pusher.py:join():181] waiting for file pusher
+2023-12-27 17:56:52,505 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 12
+2023-12-27 17:56:52,505 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:52,505 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-27 17:56:52,505 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:52,505 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-27 17:56:52,505 INFO    SenderThread:22664 [file_stream.py:finish():595] file stream finish called
+2023-12-27 17:56:52,949 INFO    SenderThread:22664 [file_stream.py:finish():599] file stream finish is done
+2023-12-27 17:56:52,949 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 13
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:52,949 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-27 17:56:52,949 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:52,949 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-27 17:56:52,949 INFO    SenderThread:22664 [sender.py:transition_state():617] send defer: 14
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: defer
+2023-12-27 17:56:52,949 INFO    HandlerThread:22664 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-27 17:56:52,949 DEBUG   SenderThread:22664 [sender.py:send():382] send: final
+2023-12-27 17:56:52,949 DEBUG   SenderThread:22664 [sender.py:send():382] send: footer
+2023-12-27 17:56:52,949 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: defer
+2023-12-27 17:56:52,949 INFO    SenderThread:22664 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-27 17:56:52,949 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: poll_exit
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: server_info
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-27 17:56:52,949 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: job_info
+2023-12-27 17:56:52,949 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: server_info
+2023-12-27 17:56:53,090 DEBUG   SenderThread:22664 [sender.py:send_request():409] send_request: job_info
+2023-12-27 17:56:53,090 DEBUG   HandlerThread:22664 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-27 17:56:53,090 INFO    HandlerThread:22664 [handler.py:finish():866] shutting down handler
+2023-12-27 17:56:53,965 INFO    WriterThread:22664 [datastore.py:close():294] close: c:\Users\rs1044\Documents\GitHub\Mixture-of-Experts-based-Federated-Learning-for-Energy-Forecasting\src\time_series\Federatedlearning\TS_FL_PV_Forecasting_Benchmark\wandb\run-20231227_175143-7mc69s3i\run-7mc69s3i.wandb
+2023-12-27 17:56:54,105 INFO    SenderThread:22664 [sender.py:finish():1548] shutting down sender
+2023-12-27 17:56:54,105 INFO    SenderThread:22664 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-27 17:56:54,105 INFO    SenderThread:22664 [file_pusher.py:join():181] waiting for file pusher

@@ -45,7 +45,7 @@ class ImportanceRegularizationLayer(layers.Layer):
         else: 
             l2_loss = 0
         
-        # Normalize expert outputs
+        # Balance expert outputs
         reshaped_expert_outputs = tf.reshape(expert_outputs, [16 * 24, num_experts * 8])
         expert_outputs_norm = tf.nn.l2_normalize(reshaped_expert_outputs, axis=-1)
         # Compute the inner product of normalized expert outputs
@@ -53,7 +53,7 @@ class ImportanceRegularizationLayer(layers.Layer):
         # Penalize similarity of outputs
         outputs_ortho_loss = self.ortho_weight * tf.reduce_sum(tf.square(outputs_inner_product - tf.eye(tf.shape(outputs_inner_product)[0])))
 
-        # Normalize expert weights
+        # Balance expert weights
         expert_weights_norm = tf.nn.l2_normalize(expert_outputs, axis=0)
         # Compute the inner product of normalized expert weights
         weights_inner_product = tf.matmul(expert_weights_norm, expert_weights_norm, transpose_a=True)

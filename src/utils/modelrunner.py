@@ -296,7 +296,8 @@ def run_soft_dense_moe_model (
     callbacks,
     results,
     all_results,
-    num_rounds=5
+    num_rounds=5,
+    use_new_loss=True,
 ):
     wandb_project_name = wb_project_name
     wandb_model_name = wb_model_name
@@ -318,8 +319,11 @@ def run_soft_dense_moe_model (
                 'learning_rate': 0.001,
                 'architecture': wandb_model_name,
             })
+            if use_new_loss:
+                model = build_soft_dense_moe_model(X_train[f'user{idx+1}'], batch_size, horizon,dense_smoe_units, dense_smoe_expert_units, dense_smoe_num_experts, metrics)
+            else:
+                model = build_soft_dense_moe_model(X_train[f'user{idx+1}'], batch_size, horizon,dense_smoe_units, dense_smoe_expert_units, dense_smoe_num_experts, metrics, use_loss=False)
 
-            model = build_soft_dense_moe_model(X_train[f'user{idx+1}'], batch_size, horizon,dense_smoe_units, dense_smoe_expert_units, dense_smoe_num_experts, metrics)
             histroy, user_results = compile_fit_evaluate_model(
                 model=model, 
                 loss=loss, 
@@ -390,7 +394,8 @@ def run_topk_dense_moe_model(
     callbacks,
     results,
     all_results,
-    num_rounds=5
+    num_rounds=5,
+    use_new_loss=True,
 ):
     wandb_project_name = wb_project_name
     wandb_model_name = wb_model_name
@@ -412,8 +417,12 @@ def run_topk_dense_moe_model(
                 'learning_rate': 0.001,
                 'architecture': wandb_model_name,
             })
-            
-            model = build_topk_dense_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, dense_topmoe_units, dense_topmoe_num_experts, dense_topmoe_top_k, dense_topmoe_expert_units, metrics)
+
+            if use_new_loss:
+                model = build_topk_dense_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, dense_topmoe_units, dense_topmoe_num_experts, dense_topmoe_top_k, dense_topmoe_expert_units, metrics)
+            else:
+                model = build_topk_dense_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, dense_topmoe_units, dense_topmoe_num_experts, dense_topmoe_top_k, dense_topmoe_expert_units, metrics, use_loss=False)
+                        
             histroy, user_results = compile_fit_evaluate_model(
                 model=model, 
                 loss=loss, 
@@ -484,7 +493,8 @@ def run_soft_lstm_moe_model(
         callbacks,
         results,
         all_results,
-        num_rounds=5
+        num_rounds=5,
+        use_new_loss=True,
 ):
     wandb_project_name = wb_project_name 
     wandb_model_name = wb_model_name 
@@ -507,7 +517,11 @@ def run_soft_lstm_moe_model(
                 'architecture': wandb_model_name,
             })
             
-            model = build_soft_biLSTM_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, lstm_smoe_units, lstm_smoe_num_experts, lstm_smoe_expert_units, metrics)
+            if use_new_loss:
+                model = build_soft_biLSTM_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, lstm_smoe_units, lstm_smoe_num_experts, lstm_smoe_expert_units, metrics)
+            else:
+                model = build_soft_biLSTM_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, lstm_smoe_units, lstm_smoe_num_experts, lstm_smoe_expert_units, metrics, use_loss=False)
+                           
             histroy, user_results = compile_fit_evaluate_model(
                 model=model, 
                 loss=loss, 
@@ -579,7 +593,8 @@ def run_topk_lstm_moe_model(
         callbacks,
         results,
         all_results,
-        num_rounds=5
+        num_rounds=5,
+        use_new_loss=True,
 ):
 
     wandb_project_name = wb_project_name
@@ -603,7 +618,11 @@ def run_topk_lstm_moe_model(
                 'architecture': wandb_model_name,
             })
 
-            model = build_topk_bilstm_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, lstm_topmoe_units, lstm_topmoe_num_experts, lstm_topmoe_top_k, lstm_topmoe_expert_units, metrics)
+            if use_new_loss:
+                model = build_topk_bilstm_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, lstm_topmoe_units, lstm_topmoe_num_experts, lstm_topmoe_top_k, lstm_topmoe_expert_units, metrics)
+            else:
+                model = build_topk_bilstm_moe_model(X_train[f'user{idx+1}'], batch_size, horizon, lstm_topmoe_units, lstm_topmoe_num_experts, lstm_topmoe_top_k, lstm_topmoe_expert_units, metrics, use_loss=False)
+            
             histroy, user_results = compile_fit_evaluate_model(
                 model=model, 
                 loss=loss, 

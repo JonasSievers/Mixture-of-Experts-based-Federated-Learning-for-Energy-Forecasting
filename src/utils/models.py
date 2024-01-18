@@ -102,7 +102,7 @@ def build_expert_network(expert_units):
       return expert
    
 #Builds a MoE model with soft gating
-def build_soft_dense_moe_model(X_train, batch_size, horizon, dense_units,  expert_units, num_experts, metrics):
+def build_soft_dense_moe_model(X_train, batch_size, horizon, dense_units,  expert_units, num_experts, metrics, use_loss=True):
     #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
     x = inputs
@@ -121,8 +121,9 @@ def build_soft_dense_moe_model(X_train, batch_size, horizon, dense_units,  exper
     #END MOE LAYER
 
     # Add ImportanceRegularizationLayer to the model
-    importance_regularizer = ImportanceRegularizationLayer()
-    routing_logits = importance_regularizer(routing_logits, expert_outputs)
+    if use_loss:
+        importance_regularizer = ImportanceRegularizationLayer()
+        routing_logits = importance_regularizer(routing_logits, expert_outputs)
 
     x = layers.Dense(dense_units, activation="relu")(moe_output)
     x = layers.Dense(dense_units, activation="relu")(x)
@@ -136,7 +137,7 @@ def build_soft_dense_moe_model(X_train, batch_size, horizon, dense_units,  exper
     return softgated_moe_model
 
 #Builds a MoE model with soft gating
-def build_soft_biLSTM_moe_model(X_train, batch_size, horizon, lstm_units, num_experts, expert_units, metrics):
+def build_soft_biLSTM_moe_model(X_train, batch_size, horizon, lstm_units, num_experts, expert_units, metrics, use_loss=True):
     #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
     x = inputs
@@ -155,8 +156,9 @@ def build_soft_biLSTM_moe_model(X_train, batch_size, horizon, lstm_units, num_ex
     #END MOE LAYER
 
     # Add ImportanceRegularizationLayer to the model
-    importance_regularizer = ImportanceRegularizationLayer()
-    routing_logits = importance_regularizer(routing_logits, expert_outputs)
+    if use_loss:
+        importance_regularizer = ImportanceRegularizationLayer()
+        routing_logits = importance_regularizer(routing_logits, expert_outputs)
 
     x = layers.Bidirectional(layers.LSTM(lstm_units, return_sequences=True))(moe_output)
     x = layers.Dropout(0.2)(x)
@@ -170,7 +172,7 @@ def build_soft_biLSTM_moe_model(X_train, batch_size, horizon, lstm_units, num_ex
     
 
 #Builds a MoE model with top_k gating
-def build_topk_dense_moe_model(X_train, batch_size, horizon, dense_units, num_experts, top_k, expert_units, metrics):
+def build_topk_dense_moe_model(X_train, batch_size, horizon, dense_units, num_experts, top_k, expert_units, metrics, use_loss=True):
     #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
     x = inputs
@@ -198,8 +200,9 @@ def build_topk_dense_moe_model(X_train, batch_size, horizon, dense_units, num_ex
     moe_output = expert_outputs_combined
 
     # Add ImportanceRegularizationLayer
-    importance_layer = ImportanceRegularizationLayer()
-    _ = importance_layer(router_probs, expert_outputs, num_experts)
+    if use_loss:
+        importance_layer = ImportanceRegularizationLayer()
+        _ = importance_layer(router_probs, expert_outputs, num_experts)
 
     #BOTTOM Model
     x = layers.Dense(dense_units)(moe_output) 
@@ -215,7 +218,7 @@ def build_topk_dense_moe_model(X_train, batch_size, horizon, dense_units, num_ex
 
 
 #Builds a MoE model with top_k gating
-def build_topk_bilstm_moe_model(X_train, batch_size, horizon, lstm_units, num_experts, top_k, expert_units, metrics):
+def build_topk_bilstm_moe_model(X_train, batch_size, horizon, lstm_units, num_experts, top_k, expert_units, metrics, use_loss=True):
     #Input of shape (batch_size, sequence_length, features)
     inputs = layers.Input(shape=(X_train.shape[1], X_train.shape[2]), batch_size=batch_size, name='input_layer') 
     x = inputs
@@ -243,8 +246,9 @@ def build_topk_bilstm_moe_model(X_train, batch_size, horizon, lstm_units, num_ex
     moe_output = expert_outputs_combined
 
     # Add ImportanceRegularizationLayer
-    importance_layer = ImportanceRegularizationLayer()
-    _ = importance_layer(router_probs, expert_outputs, num_experts)
+    if use_loss:
+        importance_layer = ImportanceRegularizationLayer()
+        _ = importance_layer(router_probs, expert_outputs, num_experts)
 
     #BOTTOM Model
     x = layers.Bidirectional(layers.LSTM(lstm_units, activation="relu", return_sequences=True))(moe_output)   
